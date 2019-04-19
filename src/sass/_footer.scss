@@ -1,0 +1,33 @@
+.main-footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--bg-color-dark);
+}
+.wrapper-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: var(--big-max-width);
+  background-color: inherit;
+  width: 100%;
+  height: 2rem;
+}
+
+.text-footer {
+  display: flex;
+  align-content: center;
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--small-font-size);
+  letter-spacing: 2px;
+
+  &::after {
+    content: url(../svg/favicon.svg);
+    display: block;
+    width: var(--small-font-size);
+    margin-left: 5px;
+  }
+}

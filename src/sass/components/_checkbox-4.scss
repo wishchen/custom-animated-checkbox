@@ -1,0 +1,39 @@
+.wrap-inpt-4 {
+  transform: rotateY(180deg);
+}
+.inpt-4 {
+  display: none;
+}
+.label-inpt-4 {
+  display: block;
+  cursor: pointer;
+  margin: 0 auto;
+  position: relative;
+
+  &::before {
+    content: "\f005";
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: var(--medio-font-size);
+    color: hsl(0, 0%, 6%);
+  }
+  &::after {
+    content: "\f005";
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    font-size: var(--medio-font-size);
+    color: #fffb1f;
+    top: 0;
+    opacity: 0;
+    transition: var(--transition-05);
+    text-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.5);
+  }
+}
+
+.label-inpt-4:hover::after,
+.label-inpt-4:hover ~ .label-inpt-4::after,
+.inpt-4:checked ~ .label-inpt-4::after {
+  opacity: 1;
+}

@@ -232,9 +232,10 @@ body {
 .inpt-2:hover + span {
   color: #4d4d4d;
   border-color: #4d4d4d;
+  cursor: pointer;
 }
 
-.inpt-2:checked + span {
+.inpt-2:checked + .span-inpt-2 {
   color: #00fff5;
   border-color: #00fff5;
   -webkit-box-shadow: 0 0 5px #00fff5, inset 0 0 5px #00fff5;

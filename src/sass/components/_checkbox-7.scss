@@ -1,2 +1,47 @@
 .inpt-7 {
+  margin: 30px;
+  &[type="checkbox"] {
+    position: relative;
+    width: 80px;
+    height: 30px;
+    appearance: none;
+    background-color: hsl(0, 98%, 68%);
+    outline: none;
+    border-radius: 20px;
+    transition: var(--transition-05);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+    &::before,
+    &::after {
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      border-radius: var(--border-radius-50);
+      background-color: #ffffff;
+      transition: var(--transition-05);
+      transform: scale(1.5);
+      font-size: var(--smaller-font-size);
+      font-family: var(--body-font);
+    }
+
+    &::before {
+      content: "Off";
+      top: 0;
+      left: 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), inset 0 0 0 3px hsl(0, 98%, 48%);
+    }
+  }
+  &:checked[type="checkbox"] {
+    background-color: hsl(110, 98%, 68%);
+
+    &::before {
+      content: "On";
+      left: 50px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2),
+        inset 0 0 0 3px hsl(110, 98%, 48%);
+    }
+  }
 }

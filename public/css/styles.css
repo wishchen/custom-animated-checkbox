@@ -478,6 +478,65 @@ body {
 }
 
 /*-------- Styles of inpt-7--------*/
+.inpt-7 {
+  margin: 30px;
+}
+
+.inpt-7[type="checkbox"] {
+  position: relative;
+  width: 80px;
+  height: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fd5d5d;
+  outline: none;
+  border-radius: 20px;
+  -webkit-transition: var(--transition-05);
+  -o-transition: var(--transition-05);
+  transition: var(--transition-05);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.inpt-7[type="checkbox"]::before, .inpt-7[type="checkbox"]::after {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: var(--border-radius-50);
+  background-color: #ffffff;
+  -webkit-transition: var(--transition-05);
+  -o-transition: var(--transition-05);
+  transition: var(--transition-05);
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  font-size: var(--smaller-font-size);
+  font-family: var(--body-font);
+}
+
+.inpt-7[type="checkbox"]::before {
+  content: "Off";
+  top: 0;
+  left: 0;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), inset 0 0 0 3px #f20202;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), inset 0 0 0 3px #f20202;
+}
+
+.inpt-7:checked[type="checkbox"] {
+  background-color: #78fd5d;
+}
+
+.inpt-7:checked[type="checkbox"]::before {
+  content: "On";
+  left: 50px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), inset 0 0 0 3px #2af202;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), inset 0 0 0 3px #2af202;
+}
+
 /*---------------------------------*/
 /*---------- Main footer ----------*/
 /*---------------------------------*/

@@ -27,7 +27,7 @@
   position: relative;
   display: inline-block;
   color: hsl(0, 0%, 25%);
-  font-size: 2rem;
+  font-size: var(--medio-font-size);
   cursor: pointer;
   font-family: var(--body-font);
 }
@@ -37,7 +37,7 @@
   top: 0;
   margin: 0 5px;
   display: inline-block;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: var(--medio-font-size);
+  height: var(--medio-font-size);
   border: 4px solid hsl(0, 0%, 25%);
 }

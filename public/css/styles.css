@@ -242,7 +242,7 @@ body {
   text-shadow: 0 0 5px #00fff5;
 }
 
-span {
+.span-inpt-2 {
   background-color: #2e2e2e;
   padding: 0.5em;
   border: 4px solid #404040;
@@ -255,6 +255,65 @@ span {
   -webkit-transition: var(--transition-05);
   -o-transition: var(--transition-05);
   transition: var(--transition-05);
+}
+
+/*-------- Styles of inpt-3 --------*/
+.inpt-3 {
+  display: none;
+}
+
+.inpt-3:checked + .label-inpt-3 .span-inpt-3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  background-color: #404040;
+  -webkit-animation: rotate_inpt_3 2s linear infinite;
+  animation: rotate_inpt_3 2s linear infinite;
+}
+
+@-webkit-keyframes rotate_inpt_3 {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate_inpt_3 {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.label-inpt-3 {
+  position: relative;
+  display: inline-block;
+  color: #404040;
+  font-size: 2rem;
+  cursor: pointer;
+  font-family: var(--body-font);
+}
+
+.span-inpt-3 {
+  position: relative;
+  top: 0;
+  margin: 0 5px;
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 4px solid #404040;
 }
 
 /*---------------------------------*/

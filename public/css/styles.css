@@ -115,6 +115,7 @@ body {
 .wrap-grid-dark {
   background-color: var(--color-dark-bg);
   border-radius: var(--border-radius);
+  z-index: var(--z-normal);
 }
 
 /*---------------------------------*/
@@ -538,6 +539,78 @@ body {
 }
 
 /*-------- Styles of inpt-8--------*/
+.inpt-8 {
+  display: none;
+}
+
+.inpt-8:checked ~ span {
+  color: #fff;
+  border: 2px solid #008eff;
+}
+
+.inpt-8:checked ~ span::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #008eff;
+  z-index: -1;
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.inpt-8:checked ~ span::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #008eff;
+  z-index: -1;
+  -webkit-filter: blur(15px);
+  filter: blur(15px);
+}
+
+.inpt-8:checked ~ span.yes {
+  color: #55ff00;
+  border-color: #55ff00;
+  -webkit-box-shadow: inset 0 0 10px #55ff00;
+  box-shadow: inset 0 0 10px #55ff00;
+}
+
+.inpt-8:checked ~ span.yes::before, .inpt-8:checked ~ span.yes::after {
+  background-color: #55ff00;
+}
+
+.inpt-8:checked ~ span.no {
+  color: #ff0000;
+  border-color: #ff0000;
+  -webkit-box-shadow: inset 0 0 10px #ff0000;
+  box-shadow: inset 0 0 10px #ff0000;
+}
+
+.inpt-8:checked ~ span.no::before, .inpt-8:checked ~ span.no::after {
+  background-color: #ff0000;
+}
+
+.span-inpt-8 {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 20px 10px;
+  padding: 5px;
+  width: 50px;
+  background-color: #000;
+  color: #444;
+  border: 2px solid #444;
+  border-radius: 4px;
+  font-size: var(--small-font-size);
+  font-family: var(--body-font);
+}
+
 /*---------------------------------*/
 /*---------- Main footer ----------*/
 /*---------------------------------*/

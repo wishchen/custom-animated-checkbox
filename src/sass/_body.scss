@@ -37,10 +37,8 @@ body {
 .wrap-grid {
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   width: 100%;
-  overflow: hidden;
   height: 100%;
   border-radius: var(--border-radius);
   background-color: hsl(0, 0%, 98%);
@@ -51,4 +49,22 @@ body {
   background-color: var(--color-dark-bg);
   border-radius: var(--border-radius);
   z-index: var(--z-normal);
+}
+
+.box-1 {
+  padding: 5px;
+  justify-content: left;
+}
+.box-2 {
+  justify-content: center;
+}
+.box-3 {
+  justify-content: right;
+}
+.box-cont {
+  position: relative;
+  display: block;
+  display: flex;
+  width: 100%;
+  height: 100%;
 }

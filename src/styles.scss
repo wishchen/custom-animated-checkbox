@@ -13,10 +13,10 @@
 @import "sass/body";
 
 /*------ Marked box in wraps ------*/
-@import "sass/markedBox.scss";
+@import "sass/components/markedBox";
 
 /*------ Button download .scss for checkbox ------*/
-@import "sass/btn-download.scss";
+@import "sass/components/btn-download";
 
 /*----------------------------------------------*/
 /*--------------- Styles of BTNs ---------------*/
@@ -24,28 +24,28 @@
 
 /*-------- Styles of inpt-1 --------*/
 /*---------------------------------*/
-@import "sass/components/checkbox-1";
+@import "sass/inputs/row-1/A-1";
 
 /*-------- Styles of inpt-2 --------*/
-@import "sass/components/checkbox-2";
+@import "sass/inputs/row-1/B-1";
 
 /*-------- Styles of inpt-3 --------*/
-@import "sass/components/checkbox-3";
+@import "sass/inputs/row-1/C-1";
 
 /*-------- Styles of inpt-4 --------*/
-@import "sass/components/checkbox-4";
+@import "sass/inputs/row-1/D-1";
 
 /*-------- Styles of inpt-5 --------*/
-@import "sass/components/checkbox-5";
+@import "sass/inputs/row-1/E-1";
 
 /*-------- Styles of inpt-6--------*/
-@import "sass/components/checkbox-6";
+@import "sass/inputs/row-1/F-1";
 
 /*-------- Styles of inpt-7--------*/
-@import "sass/components/checkbox-7";
+@import "sass/inputs/row-2/A-2";
 
 /*-------- Styles of inpt-8--------*/
-@import "sass/components/checkbox-8";
+@import "sass/inputs/row-2/B-2";
 
 /*---------------------------------*/
 /*---------- Main footer ----------*/

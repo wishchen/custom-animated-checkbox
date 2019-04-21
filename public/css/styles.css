@@ -310,10 +310,10 @@ body {
 }
 
 /*----------------------------------------------*/
-/*--------------- Styles of BTNs ---------------*/
-/*----------------------------------------------*/
-/*-------- Styles of inpt-1 --------*/
+/*=============== Styles of BTNs ===============*/
+/*-------- Styles of inputs ROW-1 --------*/
 /*---------------------------------*/
+/*-------- Input checkbox A-1 --------*/
 .inpt-A1 {
   margin: 30px;
 }
@@ -363,7 +363,7 @@ body {
   left: 40px;
 }
 
-/*-------- Styles of inpt-2 --------*/
+/*-------- Input checkbox B-1 --------*/
 .label-inpt-B1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -412,7 +412,7 @@ body {
   transition: var(--transition-05);
 }
 
-/*-------- Styles of inpt-3 --------*/
+/*-------- Input checkbox C-1 --------*/
 .inpt-C1 {
   display: none;
 }
@@ -471,7 +471,7 @@ body {
   border: 4px solid #404040;
 }
 
-/*-------- Styles of inpt-4 --------*/
+/*-------- Input checkbox D-1 --------*/
 .inpt-D1 {
   display: none;
 }
@@ -513,7 +513,7 @@ body {
   opacity: 1;
 }
 
-/*-------- Styles of inpt-5 --------*/
+/*-------- Input checkbox E-1 --------*/
 .inpt-E1 {
   position: relative;
   top: 0;
@@ -552,7 +552,7 @@ body {
   transform: rotate(45deg) translate(5px, -10px);
 }
 
-/*-------- Styles of inpt-6--------*/
+/*-------- Input checkbox F-1 --------*/
 .inpt-F1 {
   position: relative;
   cursor: pointer;
@@ -624,7 +624,9 @@ body {
   box-shadow: 0 0 5px #13b3ff;
 }
 
-/*-------- Styles of inpt-7--------*/
+/*-------- Styles of inputs ROW-2 --------*/
+/*---------------------------------*/
+/*-------- Input checkbox A-2 --------*/
 .inpt-A2 {
   margin: 30px;
 }
@@ -684,7 +686,7 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), inset 0 0 0 3px #2af202;
 }
 
-/*-------- Styles of inpt-8--------*/
+/*-------- Input checkbox B-2 --------*/
 .inpt-B2 {
   display: none;
 }

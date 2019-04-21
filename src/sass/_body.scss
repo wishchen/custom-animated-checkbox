@@ -40,7 +40,11 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  overflow: hidden;
   height: 100%;
+  border-radius: var(--border-radius);
+  background-color: hsl(0, 0%, 98%);
+  border: 2px solid hsl(0, 0%, 85%);
 }
 
 .wrap-grid-dark {

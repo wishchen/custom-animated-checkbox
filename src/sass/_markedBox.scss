@@ -1,6 +1,7 @@
 .marked-box {
   background-color: hsla(184, 20%, 67%, 0.45);
   position: absolute;
+  border-radius: var(--border-radius);
   top: 0;
   left: 0;
 }
@@ -10,5 +11,4 @@
   font-family: var(--body-font);
   color: hsla(0, 0%, 0%, 0.45);
   padding: 2px 3px;
-  cursor: normal;
 }

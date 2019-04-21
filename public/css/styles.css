@@ -162,8 +162,11 @@ body {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  overflow: hidden;
   height: 100%;
-  border: 1px solid red;
+  border-radius: var(--border-radius);
+  background-color: #fafafa;
+  border: 2px solid #d9d9d9;
 }
 
 .wrap-grid-dark {
@@ -178,6 +181,7 @@ body {
 .marked-box {
   background-color: rgba(154, 185, 188, 0.45);
   position: absolute;
+  border-radius: var(--border-radius);
   top: 0;
   left: 0;
 }
@@ -187,7 +191,6 @@ body {
   font-family: var(--body-font);
   color: rgba(0, 0, 0, 0.45);
   padding: 2px 3px;
-  cursor: normal;
 }
 
 /*----------------------------------------------*/

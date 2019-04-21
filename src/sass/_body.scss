@@ -40,8 +40,11 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  overflow: hidden;
   height: 100%;
-  border: 1px solid red; //quitar antes de commit
+  border-radius: var(--border-radius);
+  background-color: hsl(0, 0%, 98%);
+  border: 2px solid hsl(0, 0%, 85%);
 }
 
 .wrap-grid-dark {

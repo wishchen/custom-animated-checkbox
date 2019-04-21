@@ -1,7 +1,7 @@
-.inpt-3 {
+.inpt-C1 {
   display: none;
 
-  &:checked + .label-inpt-3 .span-inpt-3::before {
+  &:checked + .label-inpt-C1 .span-inpt-C1::before {
     content: "";
     display: block;
     position: absolute;
@@ -10,11 +10,11 @@
     right: 3px;
     bottom: 3px;
     background-color: hsl(0, 0%, 25%);
-    animation: rotate_inpt_3 2s linear infinite;
+    animation: rotate_inpt_C1 2s linear infinite;
   }
 }
 
-@keyframes rotate_inpt_3 {
+@keyframes rotate_inpt_C1 {
   from {
     transform: rotate(0deg);
   }
@@ -23,7 +23,7 @@
   }
 }
 
-.label-inpt-3 {
+.label-inpt-C1 {
   position: relative;
   display: inline-block;
   color: hsl(0, 0%, 25%);
@@ -32,7 +32,7 @@
   font-family: var(--body-font);
 }
 
-.span-inpt-3 {
+.span-inpt-C1 {
   position: relative;
   top: 0;
   margin: 0 5px;

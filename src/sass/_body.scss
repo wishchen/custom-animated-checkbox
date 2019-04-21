@@ -53,6 +53,10 @@ body {
   z-index: var(--z-normal);
 }
 
+.rotate-box-180 {
+  transform: rotateY(180deg);
+}
+
 .box-cont {
   position: relative;
   display: block;

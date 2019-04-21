@@ -176,6 +176,11 @@ body {
   z-index: var(--z-normal);
 }
 
+.rotate-box-180 {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
 .box-cont {
   position: relative;
   display: block;
@@ -408,11 +413,11 @@ body {
 }
 
 /*-------- Styles of inpt-3 --------*/
-.inpt-3 {
+.inpt-C1 {
   display: none;
 }
 
-.inpt-3:checked + .label-inpt-3 .span-inpt-3::before {
+.inpt-C1:checked + .label-inpt-C1 .span-inpt-C1::before {
   content: "";
   display: block;
   position: absolute;
@@ -421,11 +426,11 @@ body {
   right: 3px;
   bottom: 3px;
   background-color: #404040;
-  -webkit-animation: rotate_inpt_3 2s linear infinite;
-  animation: rotate_inpt_3 2s linear infinite;
+  -webkit-animation: rotate_inpt_C1 2s linear infinite;
+  animation: rotate_inpt_C1 2s linear infinite;
 }
 
-@-webkit-keyframes rotate_inpt_3 {
+@-webkit-keyframes rotate_inpt_C1 {
   from {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -436,7 +441,7 @@ body {
   }
 }
 
-@keyframes rotate_inpt_3 {
+@keyframes rotate_inpt_C1 {
   from {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -447,7 +452,7 @@ body {
   }
 }
 
-.label-inpt-3 {
+.label-inpt-C1 {
   position: relative;
   display: inline-block;
   color: #404040;
@@ -456,7 +461,7 @@ body {
   font-family: var(--body-font);
 }
 
-.span-inpt-3 {
+.span-inpt-C1 {
   position: relative;
   top: 0;
   margin: 0 5px;
@@ -467,35 +472,18 @@ body {
 }
 
 /*-------- Styles of inpt-4 --------*/
-.rotate-box {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
-
-.inpt-4 {
+.inpt-D1 {
   display: none;
 }
 
-.label-inpt-4 {
+.label-inpt-D1 {
   display: block;
   cursor: pointer;
   margin: 0 auto;
   position: relative;
 }
 
-.label-inpt-4::before {
+.label-inpt-D1::before {
   content: "\f005";
   font-family: fontAwesome;
   position: relative;
@@ -504,7 +492,7 @@ body {
   color: #0f0f0f;
 }
 
-.label-inpt-4::after {
+.label-inpt-D1::after {
   content: "\f005";
   font-family: fontAwesome;
   position: absolute;
@@ -519,14 +507,14 @@ body {
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.label-inpt-4:hover::after,
-.label-inpt-4:hover ~ .label-inpt-4::after,
-.inpt-4:checked ~ .label-inpt-4::after {
+.label-inpt-D1:hover::after,
+.label-inpt-D1:hover ~ .label-inpt-D1::after,
+.inpt-D1:checked ~ .label-inpt-D1::after {
   opacity: 1;
 }
 
 /*-------- Styles of inpt-5 --------*/
-.inpt-5 {
+.inpt-E1 {
   position: relative;
   top: 0;
   width: 40px;
@@ -541,7 +529,7 @@ body {
   cursor: pointer;
 }
 
-.inpt-5::before {
+.inpt-E1::before {
   content: "";
   position: absolute;
   top: 0;
@@ -554,7 +542,7 @@ body {
   transition: var(--transition-05);
 }
 
-.inpt-5:checked::before {
+.inpt-E1:checked::before {
   border-left: none;
   border-top: none;
   width: 20px;
@@ -565,7 +553,7 @@ body {
 }
 
 /*-------- Styles of inpt-6--------*/
-.inpt-6 {
+.inpt-F1 {
   position: relative;
   cursor: pointer;
   width: 120px;
@@ -583,14 +571,14 @@ body {
   box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px black, 0 5px 20px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.inpt-6:checked {
+.inpt-F1:checked {
   background: -webkit-gradient(linear, left bottom, left top, from(#6dd1ff), to(#20b7ff));
   background: -webkit-linear-gradient(bottom, #6dd1ff, #20b7ff);
   background: -o-linear-gradient(bottom, #6dd1ff, #20b7ff);
   background: linear-gradient(0deg, #6dd1ff, #20b7ff);
 }
 
-.inpt-6::before {
+.inpt-F1::before {
   content: "";
   position: absolute;
   top: 0;
@@ -608,11 +596,11 @@ body {
   transition: var(--transition-05);
 }
 
-.inpt-6:checked::before {
+.inpt-F1:checked::before {
   left: 40px;
 }
 
-.inpt-6::after {
+.inpt-F1::after {
   content: "";
   position: absolute;
   top: calc(50% - 2px);
@@ -629,7 +617,7 @@ body {
   transition: var(--transition-05);
 }
 
-.inpt-6:checked::after {
+.inpt-F1:checked::after {
   background: #63cdff;
   left: 105px;
   -webkit-box-shadow: 0 0 5px #13b3ff;
@@ -637,11 +625,11 @@ body {
 }
 
 /*-------- Styles of inpt-7--------*/
-.inpt-7 {
+.inpt-A2 {
   margin: 30px;
 }
 
-.inpt-7[type="checkbox"] {
+.inpt-A2[type="checkbox"] {
   position: relative;
   width: 80px;
   height: 30px;
@@ -658,7 +646,7 @@ body {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.inpt-7[type="checkbox"]::before, .inpt-7[type="checkbox"]::after {
+.inpt-A2[type="checkbox"]::before, .inpt-A2[type="checkbox"]::after {
   display: block;
   position: absolute;
   width: 30px;
@@ -677,7 +665,7 @@ body {
   font-family: var(--body-font);
 }
 
-.inpt-7[type="checkbox"]::before {
+.inpt-A2[type="checkbox"]::before {
   content: "Off";
   top: 0;
   left: 0;
@@ -685,11 +673,11 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), inset 0 0 0 3px #f20202;
 }
 
-.inpt-7:checked[type="checkbox"] {
+.inpt-A2:checked[type="checkbox"] {
   background-color: #78fd5d;
 }
 
-.inpt-7:checked[type="checkbox"]::before {
+.inpt-A2:checked[type="checkbox"]::before {
   content: "On";
   left: 50px;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), inset 0 0 0 3px #2af202;
@@ -697,16 +685,16 @@ body {
 }
 
 /*-------- Styles of inpt-8--------*/
-.inpt-8 {
+.inpt-B2 {
   display: none;
 }
 
-.inpt-8:checked ~ span {
+.inpt-B2:checked ~ span {
   color: #fff;
   border: 2px solid #008eff;
 }
 
-.inpt-8:checked ~ span::before {
+.inpt-B2:checked ~ span::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -719,7 +707,7 @@ body {
   filter: blur(10px);
 }
 
-.inpt-8:checked ~ span::after {
+.inpt-B2:checked ~ span::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -732,29 +720,29 @@ body {
   filter: blur(15px);
 }
 
-.inpt-8:checked ~ span.yes {
+.inpt-B2:checked ~ span.yes {
   color: #55ff00;
   border-color: #55ff00;
   -webkit-box-shadow: inset 0 0 10px #55ff00;
   box-shadow: inset 0 0 10px #55ff00;
 }
 
-.inpt-8:checked ~ span.yes::before, .inpt-8:checked ~ span.yes::after {
+.inpt-B2:checked ~ span.yes::before, .inpt-B2:checked ~ span.yes::after {
   background-color: #55ff00;
 }
 
-.inpt-8:checked ~ span.no {
+.inpt-B2:checked ~ span.no {
   color: #ff0000;
   border-color: #ff0000;
   -webkit-box-shadow: inset 0 0 10px #ff0000;
   box-shadow: inset 0 0 10px #ff0000;
 }
 
-.inpt-8:checked ~ span.no::before, .inpt-8:checked ~ span.no::after {
+.inpt-B2:checked ~ span.no::before, .inpt-B2:checked ~ span.no::after {
   background-color: #ff0000;
 }
 
-.span-inpt-8 {
+.span-inpt-B2 {
   position: relative;
   display: inline-block;
   text-align: center;

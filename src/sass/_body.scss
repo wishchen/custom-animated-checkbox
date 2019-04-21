@@ -36,7 +36,9 @@ body {
 }
 .wrap-grid {
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  align-items: center;
   flex-direction: column;
   width: 100%;
   height: 100%;
@@ -45,26 +47,19 @@ body {
   border: 2px solid hsl(0, 0%, 85%);
 }
 
-.wrap-grid-dark {
+.dark {
   background-color: var(--color-dark-bg);
   border-radius: var(--border-radius);
   z-index: var(--z-normal);
 }
 
-.box-1 {
-  padding: 5px;
-  justify-content: left;
-}
-.box-2 {
-  justify-content: center;
-}
-.box-3 {
-  justify-content: right;
-}
 .box-cont {
   position: relative;
   display: block;
   display: flex;
   width: 100%;
-  height: 100%;
+}
+
+.box-input {
+  justify-content: center;
 }

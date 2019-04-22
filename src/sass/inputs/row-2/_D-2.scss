@@ -1,0 +1,35 @@
+.inpt-D2 {
+  margin: 30px;
+  &[type="checkbox"] {
+    position: relative;
+    width: 80px;
+    height: 40px;
+    appearance: none;
+    background-color: hsl(0, 0%, 0%);
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    transition: var(--transition-05);
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: var(--border-radius-50);
+      top: 3px;
+      left: 4px;
+      background-color: #ffffff;
+      transition: var(--transition-05);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+  &:checked[type="checkbox"] {
+    background-color: #000000;
+
+    &::before {
+      transform: translateX(38px);
+    }
+  }
+}

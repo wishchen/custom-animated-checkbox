@@ -795,7 +795,7 @@ body {
 
 .span-inpt-C2 {
   position: absolute;
-  top: 10px;
+  top: 5px;
   left: 0;
   width: 20px;
   height: 20px;
@@ -822,6 +822,55 @@ body {
 }
 
 /*-------- Input checkbox B-2 --------*/
+.inpt-D2 {
+  margin: 30px;
+}
+
+.inpt-D2[type="checkbox"] {
+  position: relative;
+  width: 80px;
+  height: 40px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: black;
+  outline: none;
+  border-radius: 20px;
+  border: none;
+  -webkit-transition: var(--transition-05);
+  -o-transition: var(--transition-05);
+  transition: var(--transition-05);
+  border: 2px solid #ffffff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.inpt-D2[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--border-radius-50);
+  top: 3px;
+  left: 4px;
+  background-color: #ffffff;
+  -webkit-transition: var(--transition-05);
+  -o-transition: var(--transition-05);
+  transition: var(--transition-05);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.inpt-D2:checked[type="checkbox"] {
+  background-color: #000000;
+}
+
+.inpt-D2:checked[type="checkbox"]::before {
+  -webkit-transform: translateX(38px);
+  -ms-transform: translateX(38px);
+  transform: translateX(38px);
+}
+
 /*---------------------------------*/
 /*---------- Main footer ----------*/
 /*---------------------------------*/

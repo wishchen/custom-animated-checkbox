@@ -1,22 +1,25 @@
 /*----------- variables -----------*/
 /*---------------------------------*/
-@import "sass/variables";
+@import "sass/components/variables";
 
 /*---------------------------------*/
 /*------- Header (not menu) -------*/
 /*---------------------------------*/
-@import "sass/header";
+@import "sass/components/header";
 
 /*---------------------------------*/
 /*------ Body styles globals ------*/
 /*---------------------------------*/
-@import "sass/body";
+@import "sass/components/body";
 
 /*------ Marked box in wraps ------*/
 @import "sass/components/markedBox";
 
-/*------ Button download .scss for checkbox ------*/
+/*------ Doenload button .scss for checkbox ------*/
 @import "sass/components/btn-download";
+
+/*------ Tooltip in download button ------*/
+@import "sass/components/tooltip";
 
 /*----------------------------------------------*/
 /*=============== Styles of BTNs ===============*/
@@ -57,4 +60,4 @@
 /*---------------------------------*/
 /*---------- Main footer ----------*/
 /*---------------------------------*/
-@import "sass/footer";
+@import "sass/components/footer";

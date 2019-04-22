@@ -214,7 +214,7 @@ body {
   border-radius: var(--border-radius);
 }
 
-/*------ Button download .scss for checkbox ------*/
+/*------ Doenload button .scss for checkbox ------*/
 .box-download {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -250,7 +250,7 @@ body {
   width: 30px;
   height: 30px;
   display: block;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 .btn-download:hover + .tooltip {
@@ -261,53 +261,46 @@ body {
   visibility: visible;
 }
 
+/*------ Tooltip in download button ------*/
 .tooltip {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-transition: var(--transition-05);
-  -o-transition: var(--transition-05);
-  transition: var(--transition-05);
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
-  height: 30px;
+  color: #333333;
   background-color: #ffffff;
+  padding: 5px 10px;
+  font-family: var(--body-font);
+  font-size: var(--small-font-size);
   border: 2px solid #d9d9d9;
-  z-index: var(--z-tooltip);
   border-radius: var(--border-radius);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: var(--transition-05);
+  -o-transition: var(--transition-05);
+  transition: var(--transition-05);
   -webkit-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   transform: translateY(-5px);
-  opacity: 0;
-  visibility: hidden;
+  z-index: var(--z-tooltip);
 }
 
 .tooltip::before {
   content: "";
+  display: block;
+  position: absolute;
   width: 16px;
-  border-top-right-radius: var(--border-radius);
   height: 16px;
   border-top: 2px solid #d9d9d9;
   border-right: 2px solid #d9d9d9;
   background-color: #ffffff;
-  position: absolute;
   right: -9px;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-}
-
-.tooltip p {
-  font-family: var(--body-font);
-  font-size: var(--smaller-font-size);
-  padding: 5px;
-  z-index: var(--z-tooltip);
-  color: #333333;
 }
 
 /*----------------------------------------------*/

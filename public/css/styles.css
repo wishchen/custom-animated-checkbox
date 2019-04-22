@@ -135,8 +135,6 @@ body {
 .wrapper-section-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
-  grid-template-columns: repeat(6, 1fr);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -168,6 +166,7 @@ body {
   border-radius: var(--border-radius);
   background-color: #fafafa;
   border: 2px solid #d9d9d9;
+  z-index: var(--z-normal);
 }
 
 .dark {
@@ -310,11 +309,51 @@ body {
 }
 
 /*------ Media Query for 1200px ------*/
-/* Large devices (laptops/desktops, 1200px and up) */
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 600px) {
+  :root {
+    /*--- Sizes variables ---*/
+    --big-max-width: 700px;
+    --h1-font-size: 1.75rem;
+    --heading-height: 3em;
+  }
   .wrapper-section-grid {
-    -ms-grid-columns: (1fr)[5];
-    grid-template-columns: repeat(5, 1fr);
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  :root {
+    /*--- Sizes variables ---*/
+    --big-max-width: 300px;
+    --h1-font-size: 1rem;
+    --heading-height: 4em;
+  }
+  .wrapper-section-grid {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper-section-grid {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .wrapper-section-grid {
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Large devices (laptops/desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .wrapper-section-grid {
+    -ms-grid-columns: (1fr)[6];
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
@@ -1078,6 +1117,7 @@ body {
   justify-content: center;
   width: 100%;
   background-color: var(--bg-color-dark);
+  z-index: var(--z-fixed);
 }
 
 .wrapper-footer {

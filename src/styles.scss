@@ -18,9 +18,6 @@
 /*------ Button download .scss for checkbox ------*/
 @import "sass/components/btn-download";
 
-/*------ Media Query for 1200px ------*/
-@import "sass/components/mediaQuery";
-
 /*----------------------------------------------*/
 /*=============== Styles of BTNs ===============*/
 /*-------- Styles of inputs ROW-1 --------*/
@@ -61,3 +58,6 @@
 /*---------- Main footer ----------*/
 /*---------------------------------*/
 @import "sass/footer";
+
+/*------ Media Query for 1200px ------*/
+@import "sass/components/mediaQuery";

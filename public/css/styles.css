@@ -54,6 +54,7 @@
   width: 100%;
   height: var(--heading-height);
   background-color: var(--first-color);
+  padding: 0 50px;
 }
 
 .main-header-items {
@@ -123,6 +124,7 @@ body {
 
 .main-section {
   position: relative;
+  padding: 0 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,6 +166,7 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
+  max-width: 350px;
   height: 100%;
   border-radius: var(--border-radius);
   background-color: #fafafa;
@@ -308,58 +311,6 @@ body {
   padding: 5px;
   z-index: var(--z-tooltip);
   color: #333333;
-}
-
-/*------ Media Query for 1200px ------*/
-@media only screen and (max-width: 600px) {
-  .box-marked {
-    visibility: hidden;
-  }
-  .wrapper-section-grid {
-    -ms-grid-columns: (1fr)[1];
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-/* Large devices (laptops/desktops, 1200px and up) */
-@media only screen and (min-width: 600px) {
-  .box-marked {
-    visibility: hidden;
-  }
-  .wrapper-section-grid {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .box-marked {
-    visibility: hidden;
-  }
-  .wrapper-section-grid {
-    -ms-grid-columns: (1fr)[3];
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .box-marked {
-    visibility: hidden;
-  }
-  .wrapper-section-grid {
-    -ms-grid-columns: (1fr)[4];
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .box-marked {
-    visibility: visible;
-  }
-  .wrapper-section-grid {
-    -ms-grid-columns: (1fr)[5];
-    grid-template-columns: repeat(5, 1fr);
-  }
 }
 
 /*----------------------------------------------*/
@@ -1158,4 +1109,72 @@ body {
   display: block;
   width: var(--small-font-size);
   margin-left: 5px;
+}
+
+/*------ Media Query for 1200px ------*/
+@media only screen and (max-width: 600px) {
+  .box-marked {
+    visibility: hidden;
+  }
+  .wrapper-section-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-gap: var(--gap);
+  }
+  .wrapper-section-grid {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Large devices (laptops/desktops, 1200px and up) */
+@media only screen and (min-width: 600px) {
+  .box-marked {
+    visibility: hidden;
+  }
+  .wrapper-section-grid {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .box-marked {
+    visibility: hidden;
+  }
+  .wrapper-section-grid {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .box-marked {
+    visibility: hidden;
+  }
+  .wrapper-section-grid {
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .box-marked {
+    visibility: visible;
+  }
+  .wrapper-section-grid {
+    -ms-grid-columns: (1fr)[5];
+    grid-template-columns: repeat(5, 1fr);
+  }
 }

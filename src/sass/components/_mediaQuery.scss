@@ -9,6 +9,13 @@
     visibility: hidden;
   }
   .wrapper-section-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-gap: var(--gap);
+  }
+  .wrapper-section-grid {
     grid-template-columns: repeat(1, 1fr);
   }
 }

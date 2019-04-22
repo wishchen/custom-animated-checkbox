@@ -1,20 +1,28 @@
-@media only screen and (min-width: 600px) {
-  :root {
-    /*--- Sizes variables ---*/
-    --big-max-width: 700px;
-    --h1-font-size: 1.75rem;
-    --heading-height: 3em;
+@media only screen and (max-width: 600px) {
+  // :root {
+  //   /*--- Sizes variables ---*/
+  //   --big-max-width: 700px;
+  //   --h1-font-size: 1.75rem;
+  //   --heading-height: 3em;
+  // }
+  .box-marked {
+    visibility: hidden;
   }
   .wrapper-section-grid {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+/* Large devices (laptops/desktops, 1200px and up) */
+
 @media only screen and (min-width: 600px) {
-  :root {
-    /*--- Sizes variables ---*/
-    --big-max-width: 300px;
-    --h1-font-size: 1rem;
-    --heading-height: 4em;
+  // :root {
+  //   /*--- Sizes variables ---*/
+  //   --big-max-width: 300px;
+  //   --h1-font-size: 1rem;
+  //   --heading-height: 4em;
+  // }
+  .box-marked {
+    visibility: hidden;
   }
   .wrapper-section-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -28,20 +36,28 @@
   //   --h1-font-size: 1.75rem;
   //   --heading-height: 3em;
   // }
+  .box-marked {
+    visibility: hidden;
+  }
   .wrapper-section-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media only screen and (min-width: 992px) {
+  .box-marked {
+    visibility: hidden;
+  }
   .wrapper-section-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-/* Large devices (laptops/desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .box-marked {
+    visibility: visible;
+  }
   .wrapper-section-grid {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 }

@@ -207,7 +207,7 @@ body {
 
 .span-box-marked {
   background-color: rgba(154, 185, 188, 0.45);
-  font-size: var(--small-font-size);
+  font-size: var(--smaller-font-size);
   font-family: var(--body-font);
   color: rgba(0, 0, 0, 0.45);
   padding: 2px 3px;
@@ -307,6 +307,15 @@ body {
   padding: 5px;
   z-index: var(--z-tooltip);
   color: #333333;
+}
+
+/*------ Media Query for 1200px ------*/
+/* Large devices (laptops/desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  .wrapper-section-grid {
+    -ms-grid-columns: (1fr)[5];
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 /*----------------------------------------------*/
@@ -816,9 +825,9 @@ body {
   -webkit-transition: var(--transition-05);
   -o-transition: var(--transition-05);
   transition: var(--transition-05);
-  -webkit-transform: translateX(170px);
-  -ms-transform: translateX(170px);
-  transform: translateX(170px);
+  -webkit-transform: translateX(110px);
+  -ms-transform: translateX(110px);
+  transform: translateX(110px);
 }
 
 /*-------- Input checkbox D-2 --------*/

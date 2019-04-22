@@ -759,7 +759,7 @@ body {
   font-family: var(--body-font);
 }
 
-/*-------- Input checkbox B-2 --------*/
+/*-------- Input checkbox C-2 --------*/
 .list-inpt-C2 {
   padding: 10px 20px;
   width: 100%;
@@ -821,7 +821,7 @@ body {
   transform: translateX(170px);
 }
 
-/*-------- Input checkbox B-2 --------*/
+/*-------- Input checkbox D-2 --------*/
 .inpt-D2 {
   margin: 30px;
 }
@@ -871,7 +871,7 @@ body {
   transform: translateX(38px);
 }
 
-/*-------- Input checkbox B-2 --------*/
+/*-------- Input checkbox E-2 --------*/
 .box-inpt-E2 {
   position: absolute;
   width: 100px;

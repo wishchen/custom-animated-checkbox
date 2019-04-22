@@ -237,9 +237,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
@@ -250,6 +250,7 @@ body {
   width: 30px;
   height: 30px;
   display: block;
+  margin-left: 20px;
 }
 
 .btn-download:hover + .tooltip {

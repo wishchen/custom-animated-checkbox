@@ -12,13 +12,14 @@
   padding: 5px;
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   flex-direction: row-reverse;
 }
 .btn-download {
   width: 30px;
   height: 30px;
   display: block;
+  margin-left: 15px;
 
   &:hover + .tooltip {
     opacity: 1;
@@ -55,7 +56,7 @@
   }
   p {
     font-family: var(--body-font);
-    font-size: var(--small-font-size);
+    font-size: var(--smaller-font-size);
     padding: 5px;
     z-index: var(--z-tooltip);
     color: hsl(0, 0%, 20%);

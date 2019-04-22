@@ -1,16 +1,16 @@
 /*----------- variables -----------*/
 /*---------------------------------*/
-@import "sass/variables";
+@import "sass/components/variables";
 
 /*---------------------------------*/
 /*------- Header (not menu) -------*/
 /*---------------------------------*/
-@import "sass/header";
+@import "sass/components/header";
 
 /*---------------------------------*/
 /*------ Body styles globals ------*/
 /*---------------------------------*/
-@import "sass/body";
+@import "sass/components/body";
 
 /*------ Marked box in wraps ------*/
 @import "sass/components/markedBox";
@@ -60,4 +60,4 @@
 /*---------------------------------*/
 /*---------- Main footer ----------*/
 /*---------------------------------*/
-@import "sass/footer";
+@import "sass/components/footer";

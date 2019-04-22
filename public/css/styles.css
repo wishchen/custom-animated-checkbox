@@ -546,8 +546,10 @@ body {
   transform: rotate(45deg) translate(5px, -10px);
 }
 
-/*-------- Input checkbox F-1 --------*/
-.inpt-F1 {
+/*-------- Styles of inputs ROW-2 --------*/
+/*---------------------------------*/
+/*-------- Input checkbox A-2 --------*/
+.inpt-A2 {
   position: relative;
   cursor: pointer;
   width: 120px;
@@ -565,14 +567,14 @@ body {
   box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px black, 0 5px 20px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.inpt-F1:checked {
+.inpt-A2:checked {
   background: -webkit-gradient(linear, left bottom, left top, from(#6dd1ff), to(#20b7ff));
   background: -webkit-linear-gradient(bottom, #6dd1ff, #20b7ff);
   background: -o-linear-gradient(bottom, #6dd1ff, #20b7ff);
   background: linear-gradient(0deg, #6dd1ff, #20b7ff);
 }
 
-.inpt-F1::before {
+.inpt-A2::before {
   content: "";
   position: absolute;
   top: 0;
@@ -590,11 +592,11 @@ body {
   transition: var(--transition-05);
 }
 
-.inpt-F1:checked::before {
+.inpt-A2:checked::before {
   left: 40px;
 }
 
-.inpt-F1::after {
+.inpt-A2::after {
   content: "";
   position: absolute;
   top: calc(50% - 2px);
@@ -611,21 +613,19 @@ body {
   transition: var(--transition-05);
 }
 
-.inpt-F1:checked::after {
+.inpt-A2:checked::after {
   background: #63cdff;
   left: 105px;
   -webkit-box-shadow: 0 0 5px #13b3ff;
   box-shadow: 0 0 5px #13b3ff;
 }
 
-/*-------- Styles of inputs ROW-2 --------*/
-/*---------------------------------*/
-/*-------- Input checkbox A-2 --------*/
-.inpt-A2 {
+/*-------- Input checkbox B-2 --------*/
+.inpt-B2 {
   margin: 30px;
 }
 
-.inpt-A2[type="checkbox"] {
+.inpt-B2[type="checkbox"] {
   position: relative;
   width: 80px;
   height: 30px;
@@ -642,7 +642,7 @@ body {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.inpt-A2[type="checkbox"]::before, .inpt-A2[type="checkbox"]::after {
+.inpt-B2[type="checkbox"]::before, .inpt-B2[type="checkbox"]::after {
   display: block;
   position: absolute;
   width: 30px;
@@ -661,7 +661,7 @@ body {
   font-family: var(--body-font);
 }
 
-.inpt-A2[type="checkbox"]::before {
+.inpt-B2[type="checkbox"]::before {
   content: "Off";
   top: 0;
   left: 0;
@@ -669,28 +669,28 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), inset 0 0 0 3px #f20202;
 }
 
-.inpt-A2:checked[type="checkbox"] {
+.inpt-B2:checked[type="checkbox"] {
   background-color: #78fd5d;
 }
 
-.inpt-A2:checked[type="checkbox"]::before {
+.inpt-B2:checked[type="checkbox"]::before {
   content: "On";
   left: 50px;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), inset 0 0 0 3px #2af202;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), inset 0 0 0 3px #2af202;
 }
 
-/*-------- Input checkbox B-2 --------*/
-.inpt-B2 {
+/*-------- Input checkbox C-2 --------*/
+.inpt-C2 {
   display: none;
 }
 
-.inpt-B2:checked ~ span {
+.inpt-C2:checked ~ span {
   color: #fff;
   border: 2px solid #008eff;
 }
 
-.inpt-B2:checked ~ span::before {
+.inpt-C2:checked ~ span::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -703,7 +703,7 @@ body {
   filter: blur(10px);
 }
 
-.inpt-B2:checked ~ span::after {
+.inpt-C2:checked ~ span::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -716,29 +716,29 @@ body {
   filter: blur(15px);
 }
 
-.inpt-B2:checked ~ span.yes {
+.inpt-C2:checked ~ span.yes {
   color: #55ff00;
   border-color: #55ff00;
   -webkit-box-shadow: inset 0 0 10px #55ff00;
   box-shadow: inset 0 0 10px #55ff00;
 }
 
-.inpt-B2:checked ~ span.yes::before, .inpt-B2:checked ~ span.yes::after {
+.inpt-C2:checked ~ span.yes::before, .inpt-C2:checked ~ span.yes::after {
   background-color: #55ff00;
 }
 
-.inpt-B2:checked ~ span.no {
+.inpt-C2:checked ~ span.no {
   color: #ff0000;
   border-color: #ff0000;
   -webkit-box-shadow: inset 0 0 10px #ff0000;
   box-shadow: inset 0 0 10px #ff0000;
 }
 
-.inpt-B2:checked ~ span.no::before, .inpt-B2:checked ~ span.no::after {
+.inpt-C2:checked ~ span.no::before, .inpt-C2:checked ~ span.no::after {
   background-color: #ff0000;
 }
 
-.span-inpt-B2 {
+.span-inpt-C2 {
   position: relative;
   display: inline-block;
   text-align: center;
@@ -753,19 +753,19 @@ body {
   font-family: var(--body-font);
 }
 
-/*-------- Input checkbox C-2 --------*/
-.list-inpt-C2 {
+/*-------- Input checkbox D-2 --------*/
+.list-inpt-D2 {
   padding: 10px 20px;
   width: 100%;
 }
 
-.list-item-inpy-C2 {
+.list-item-inpy-D2 {
   list-style: none;
   position: relative;
   padding: 4px 0;
 }
 
-.label-input-C2 {
+.label-input-D2 {
   color: #ffffff;
   font-size: var(--normal-font-size);
   font-family: var(--body-font);
@@ -773,12 +773,12 @@ body {
   cursor: pointer;
 }
 
-.inpt-C2 {
+.inpt-D2 {
   opacity: 0;
   cursor: pointer;
 }
 
-.inpt-C2:checked ~ .span-inpt-C2::before {
+.inpt-D2:checked ~ .span-inpt-D2::before {
   background-color: #adff00;
   -webkit-box-shadow: 0 0 15px #adff00;
   box-shadow: 0 0 15px #adff00;
@@ -787,7 +787,7 @@ body {
   transform: translateX(0);
 }
 
-.span-inpt-C2 {
+.span-inpt-D2 {
   position: absolute;
   top: 5px;
   left: 0;
@@ -798,7 +798,7 @@ body {
   border-radius: var(--border-radius);
 }
 
-.span-inpt-C2:before {
+.span-inpt-D2:before {
   content: "";
   position: absolute;
   top: 3px;
@@ -815,12 +815,12 @@ body {
   transform: translateX(170px);
 }
 
-/*-------- Input checkbox D-2 --------*/
-.inpt-D2 {
+/*-------- Input checkbox E-2 --------*/
+.inpt-E2 {
   margin: 30px;
 }
 
-.inpt-D2[type="checkbox"] {
+.inpt-E2[type="checkbox"] {
   position: relative;
   width: 80px;
   height: 40px;
@@ -839,7 +839,7 @@ body {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.inpt-D2[type="checkbox"]::before {
+.inpt-E2[type="checkbox"]::before {
   content: "";
   position: absolute;
   width: 30px;
@@ -855,25 +855,27 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.inpt-D2:checked[type="checkbox"] {
+.inpt-E2:checked[type="checkbox"] {
   background-color: #000000;
 }
 
-.inpt-D2:checked[type="checkbox"]::before {
+.inpt-E2:checked[type="checkbox"]::before {
   -webkit-transform: translateX(38px);
   -ms-transform: translateX(38px);
   transform: translateX(38px);
 }
 
-/*-------- Input checkbox E-2 --------*/
-.box-inpt-E2 {
+/*-------- Styles of inputs ROW-3 --------*/
+/*---------------------------------*/
+/*-------- Input checkbox A-3 --------*/
+.box-inpt-A3 {
   position: absolute;
   width: 100px;
   height: 40px;
   cursor: pointer;
 }
 
-.inpt-E2 {
+.inpt-A3 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -884,13 +886,13 @@ body {
   z-index: var(--z-normal);
 }
 
-.inpt-E2:checked + .box-span-inpt-E2 .span-input-E2 {
+.inpt-A3:checked + .box-span-inpt-A3 .span-input-A3 {
   -webkit-transform: translateX(60px);
   -ms-transform: translateX(60px);
   transform: translateX(60px);
 }
 
-.box-span-inpt-E2 {
+.box-span-inpt-A3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -903,7 +905,7 @@ body {
   overflow: hidden;
 }
 
-.span-input-E2 {
+.span-input-A3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -915,7 +917,7 @@ body {
   transition: var(--transition-05);
 }
 
-.span-input-E2::before {
+.span-input-A3::before {
   content: "ON";
   position: absolute;
   left: -60px;
@@ -930,7 +932,7 @@ body {
   color: #ffffff;
 }
 
-.span-input-E2::after {
+.span-input-A3::after {
   content: "OFF";
   position: absolute;
   right: -60px;
@@ -945,15 +947,15 @@ body {
   color: #ffffff;
 }
 
-/*-------- Input checkbox F-2 --------*/
-.list-inpt-F2 {
+/*-------- Input checkbox B-3 --------*/
+.list-inpt-B3 {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.list-item-inpy-F2 {
+.list-item-inpy-B3 {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -966,7 +968,7 @@ body {
   text-align: center;
 }
 
-.label-input-F2 {
+.label-input-B3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -980,14 +982,14 @@ body {
   position: relative;
 }
 
-.inpt-F2 {
+.inpt-B3 {
   display: block;
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 
-.span-inpt-F2 {
+.span-inpt-B3 {
   position: relative;
   display: block;
   width: 70px;
@@ -1010,7 +1012,7 @@ body {
   z-index: var(--z-normal);
 }
 
-.span-inpt-F2::before {
+.span-inpt-B3::before {
   content: "";
   position: absolute;
   width: 12px;
@@ -1024,7 +1026,7 @@ body {
   z-index: var(--z-normal);
 }
 
-.span-inpt-F2:after {
+.span-inpt-B3:after {
   content: "";
   position: absolute;
   top: 6px;
@@ -1036,7 +1038,7 @@ body {
   border: 2px solid #161616;
 }
 
-.inpt-F2:checked ~ .span-inpt-F2::before {
+.inpt-B3:checked ~ .span-inpt-B3::before {
   background-color: #00b0ff;
   -webkit-box-shadow: 0 0 10px #00b0ff, 0 0 15px #00b0ff, 0 0 20px #00b0ff, 0 0 25px #00b0ff, 0 0 30px #00b0ff, 0 0 2px #00aeff1a;
   box-shadow: 0 0 10px #00b0ff, 0 0 15px #00b0ff, 0 0 20px #00b0ff, 0 0 25px #00b0ff, 0 0 30px #00b0ff, 0 0 2px #00aeff1a;
@@ -1046,9 +1048,6 @@ body {
   color: rebeccapurple;
 }
 
-/*-------- Styles of inputs ROW-3 --------*/
-/*---------------------------------*/
-/*-------- Input checkbox A-3 --------*/
 /*---------------------------------*/
 /*---------- Main footer ----------*/
 /*---------------------------------*/

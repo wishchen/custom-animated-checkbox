@@ -1,9 +1,9 @@
-.list-inpt-F2 {
+.list-inpt-B3 {
   position: relative;
   display: flex;
 }
 
-.list-item-inpy-F2 {
+.list-item-inpy-B3 {
   position: relative;
   display: flex;
   justify-content: center;
@@ -11,19 +11,19 @@
   width: 50px;
   text-align: center;
 }
-.label-input-F2 {
+.label-input-B3 {
   display: flex;
   justify-content: center;
   flex-direction: column;
   position: relative;
 }
-.inpt-F2 {
+.inpt-B3 {
   display: block;
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
-.span-inpt-F2 {
+.span-inpt-B3 {
   position: relative;
   display: block;
   width: 70px;
@@ -60,7 +60,7 @@
   }
 }
 
-.inpt-F2:checked ~ .span-inpt-F2::before {
+.inpt-B3:checked ~ .span-inpt-B3::before {
   background-color: #00b0ff;
   box-shadow: 0 0 10px #00b0ff, 0 0 15px #00b0ff, 0 0 20px #00b0ff,
     0 0 25px #00b0ff, 0 0 30px #00b0ff, 0 0 2px #00aeff1a;

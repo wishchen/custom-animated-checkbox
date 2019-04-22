@@ -135,8 +135,8 @@ body {
 .wrapper-section-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
-  grid-template-columns: repeat(6, 1fr);
+  -ms-grid-columns: (1fr)[5];
+  grid-template-columns: repeat(5, 1fr);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;

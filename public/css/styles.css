@@ -1827,6 +1827,97 @@ label:hover {
 }
 
 /*-------- Input checkbox E-4 --------*/
+.form-inpt-E4 {
+  text-align: center;
+}
+
+.inpt-E4,
+.inpt-E4:before,
+.inpt-E4:after {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.inpt-E4 {
+  background-color: #1b7b91;
+  border-radius: 0.2em;
+  -webkit-box-shadow: 0 0.05em 0 0.05em rgba(0, 0, 0, 0.3) inset;
+  box-shadow: 0 0.05em 0 0.05em rgba(0, 0, 0, 0.3) inset;
+  font-size: 4em;
+  overflow: hidden;
+  position: relative;
+  width: 3em;
+  height: 1.2em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  z-index: 0;
+}
+
+.inpt-E4:before,
+.inpt-E4:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.inpt-E4:before {
+  background-color: currentColor;
+  border-radius: 0.125em;
+  -webkit-box-shadow: 0 0 0 0.05em inset, -0.12em -0.12em 0 #6d94b8 inset, -0.4em -0.3em 0 0.05em inset, 0.12em 0.12em 0 white inset;
+  box-shadow: 0 0 0 0.05em inset, -0.12em -0.12em 0 #6d94b8 inset, -0.4em -0.3em 0 0.05em inset, 0.12em 0.12em 0 white inset;
+  color: #95bce0;
+  opacity: 0.9;
+  bottom: 0;
+  left: 0.125em;
+  width: 1em;
+  height: 1em;
+  z-index: 2;
+}
+
+.inpt-E4:after {
+  background-image: -webkit-radial-gradient(38% 95%, 0.2em 0.5em, white 49%, rgba(255, 255, 255, 0) 50%), -webkit-radial-gradient(52% 95%, 0.3em 0.8em, white 49%, rgba(255, 255, 255, 0) 50%), -webkit-radial-gradient(67% 95%, 0.25em 0.4em, white 49%, rgba(255, 255, 255, 0) 50%), -webkit-radial-gradient(36% 95%, 0.25em 0.7em, #ffe000 49%, rgba(255, 224, 0, 0) 50%), -webkit-radial-gradient(52% 95%, 0.4em 1.2em, #ffe000 49%, rgba(255, 224, 0, 0) 50%), -webkit-radial-gradient(70% 93%, 0.25em 0.6em, #ffe000 49%, rgba(255, 224, 0, 0) 50%), -webkit-radial-gradient(32% 81%, 0.3em 0.8em, #ff9000 49%, rgba(255, 144, 0, 0) 50%), -webkit-radial-gradient(52% 95%, 0.5em 1.6em, #ff9000 49%, rgba(255, 144, 0, 0) 50%), -webkit-radial-gradient(74% 86%, 0.3em 0.9em, #ff9000 49%, rgba(255, 144, 0, 0) 50%), -webkit-radial-gradient(25% 70%, 0.4em 0.8em, #ff4c00 49%, rgba(255, 76, 0, 0) 50%), -webkit-radial-gradient(52% 100%, 0.7em 2.25em, #ff4c00 49%, rgba(255, 76, 0, 0) 50%), -webkit-radial-gradient(79% 75%, 0.4em 1em, #ff4c00 49%, rgba(255, 76, 0, 0) 50%);
+  background-image: -o-radial-gradient(38% 95%, 0.2em 0.5em, white 49%, rgba(255, 255, 255, 0) 50%), -o-radial-gradient(52% 95%, 0.3em 0.8em, white 49%, rgba(255, 255, 255, 0) 50%), -o-radial-gradient(67% 95%, 0.25em 0.4em, white 49%, rgba(255, 255, 255, 0) 50%), -o-radial-gradient(36% 95%, 0.25em 0.7em, #ffe000 49%, rgba(255, 224, 0, 0) 50%), -o-radial-gradient(52% 95%, 0.4em 1.2em, #ffe000 49%, rgba(255, 224, 0, 0) 50%), -o-radial-gradient(70% 93%, 0.25em 0.6em, #ffe000 49%, rgba(255, 224, 0, 0) 50%), -o-radial-gradient(32% 81%, 0.3em 0.8em, #ff9000 49%, rgba(255, 144, 0, 0) 50%), -o-radial-gradient(52% 95%, 0.5em 1.6em, #ff9000 49%, rgba(255, 144, 0, 0) 50%), -o-radial-gradient(74% 86%, 0.3em 0.9em, #ff9000 49%, rgba(255, 144, 0, 0) 50%), -o-radial-gradient(25% 70%, 0.4em 0.8em, #ff4c00 49%, rgba(255, 76, 0, 0) 50%), -o-radial-gradient(52% 100%, 0.7em 2.25em, #ff4c00 49%, rgba(255, 76, 0, 0) 50%), -o-radial-gradient(79% 75%, 0.4em 1em, #ff4c00 49%, rgba(255, 76, 0, 0) 50%);
+  background-image: radial-gradient(0.2em 0.5em at 38% 95%, white 49%, rgba(255, 255, 255, 0) 50%), radial-gradient(0.3em 0.8em at 52% 95%, white 49%, rgba(255, 255, 255, 0) 50%), radial-gradient(0.25em 0.4em at 67% 95%, white 49%, rgba(255, 255, 255, 0) 50%), radial-gradient(0.25em 0.7em at 36% 95%, #ffe000 49%, rgba(255, 224, 0, 0) 50%), radial-gradient(0.4em 1.2em at 52% 95%, #ffe000 49%, rgba(255, 224, 0, 0) 50%), radial-gradient(0.25em 0.6em at 70% 93%, #ffe000 49%, rgba(255, 224, 0, 0) 50%), radial-gradient(0.3em 0.8em at 32% 81%, #ff9000 49%, rgba(255, 144, 0, 0) 50%), radial-gradient(0.5em 1.6em at 52% 95%, #ff9000 49%, rgba(255, 144, 0, 0) 50%), radial-gradient(0.3em 0.9em at 74% 86%, #ff9000 49%, rgba(255, 144, 0, 0) 50%), radial-gradient(0.4em 0.8em at 25% 70%, #ff4c00 49%, rgba(255, 76, 0, 0) 50%), radial-gradient(0.7em 2.25em at 52% 100%, #ff4c00 49%, rgba(255, 76, 0, 0) 50%), radial-gradient(0.4em 1em at 79% 75%, #ff4c00 49%, rgba(255, 76, 0, 0) 50%);
+  background-position: 100% 1.5em;
+  background-size: 1.5em 1.5em;
+  background-repeat: no-repeat;
+  border-radius: 0 0 0 0.1em / 0 0 0 0;
+  -webkit-box-shadow: 0 0 0 0 #a9d0f4 inset;
+  box-shadow: 0 0 0 0 #a9d0f4 inset;
+  bottom: 0;
+  left: 0;
+  width: 1.5em;
+  height: 1.5em;
+  z-index: 1;
+}
+
+/* Checked */
+.inpt-E4:checked {
+  background-color: #5c0808;
+}
+
+.inpt-E4:checked:before {
+  border-radius: 50%;
+  -webkit-transform: translate(1.5em, 1.5em) rotate(45deg) scale(0.5);
+  -ms-transform: translate(1.5em, 1.5em) rotate(45deg) scale(0.5);
+  transform: translate(1.5em, 1.5em) rotate(45deg) scale(0.5);
+}
+
+.inpt-E4:checked:after {
+  background-position: 100% 0;
+  -webkit-box-shadow: 0 -0.15em 0 0 #a9d0f4 inset;
+  box-shadow: 0 -0.15em 0 0 #a9d0f4 inset;
+  width: 3em;
+}
+
+/* Other States */
+.inpt-E4:focus {
+  /* Usually an anti-A11Y practice but set to remove an annoyance just for this demo */
+  outline: 0;
+}
+
 /*-------- Styles of inputs ROW-5 --------*/
 /*-#######################################*/
 /*-------- Input checkbox A-5 --------*/

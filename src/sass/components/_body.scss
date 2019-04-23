@@ -10,8 +10,8 @@ body {
   counter-reset: section;
 }
 
-input,
-label {
+input:hover,
+label:hover {
   cursor: pointer;
 }
 

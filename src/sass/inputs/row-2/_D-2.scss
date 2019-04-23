@@ -11,11 +11,9 @@
   font-size: var(--normal-font-size);
   font-family: var(--body-font);
   padding-left: 30px;
-  cursor: pointer;
 }
 .inpt-D2 {
   opacity: 0;
-  cursor: pointer;
 
   &:checked ~ .span-inpt-D2::before {
     background-color: #adff00;

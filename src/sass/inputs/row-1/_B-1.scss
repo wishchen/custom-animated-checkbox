@@ -10,7 +10,6 @@
   &:hover + span {
     color: hsl(0, 0%, 30%);
     border-color: hsl(0, 0%, 30%);
-    cursor: pointer;
   }
 
   &:checked + .span-inpt-B1 {

@@ -32,7 +32,6 @@
 .inpt-E3 {
   position: absolute;
   opacity: 0;
-  cursor: pointer;
 
   &:checked ~ .box-ison-inpt-E3 {
     background-color: #000;
@@ -57,7 +56,6 @@
   border: 3px solid black;
   border-radius: 10px;
   transition: 0.5s;
-  cursor: pointer;
 }
 .span-icon-inpt-E3 {
   display: block;

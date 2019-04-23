@@ -111,8 +111,8 @@ body {
   counter-reset: section;
 }
 
-input,
-label {
+input:hover,
+label:hover {
   cursor: pointer;
 }
 
@@ -390,7 +390,6 @@ label {
 .inpt-B1:hover + span {
   color: #4d4d4d;
   border-color: #4d4d4d;
-  cursor: pointer;
 }
 
 .inpt-B1:checked + .span-inpt-B1 {
@@ -462,7 +461,6 @@ label {
   display: inline-block;
   color: #404040;
   font-size: var(--medio-font-size);
-  cursor: pointer;
   font-family: var(--body-font);
 }
 
@@ -483,7 +481,6 @@ label {
 
 .label-inpt-D1 {
   display: block;
-  cursor: pointer;
   margin: 0 auto;
   position: relative;
 }
@@ -531,7 +528,6 @@ label {
   -webkit-transition: var(--transition-05);
   -o-transition: var(--transition-05);
   transition: var(--transition-05);
-  cursor: pointer;
 }
 
 .inpt-E1::before {
@@ -562,7 +558,6 @@ label {
 /*-------- Input checkbox A-2 --------*/
 .inpt-A2 {
   position: relative;
-  cursor: pointer;
   width: 120px;
   height: 40px;
   -webkit-appearance: none;
@@ -780,12 +775,10 @@ label {
   font-size: var(--normal-font-size);
   font-family: var(--body-font);
   padding-left: 30px;
-  cursor: pointer;
 }
 
 .inpt-D2 {
   opacity: 0;
-  cursor: pointer;
 }
 
 .inpt-D2:checked ~ .span-inpt-D2::before {
@@ -882,7 +875,6 @@ label {
   position: absolute;
   width: 100px;
   height: 40px;
-  cursor: pointer;
 }
 
 .inpt-A3 {
@@ -996,7 +988,6 @@ label {
   display: block;
   position: absolute;
   opacity: 0;
-  cursor: pointer;
 }
 
 .span-inpt-B3 {
@@ -1323,7 +1314,6 @@ label {
 .inpt-E3 {
   position: absolute;
   opacity: 0;
-  cursor: pointer;
 }
 
 .inpt-E3:checked ~ .box-ison-inpt-E3 {
@@ -1357,7 +1347,6 @@ label {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  cursor: pointer;
 }
 
 .span-icon-inpt-E3 {
@@ -1415,7 +1404,6 @@ label {
   align-items: center;
   top: 0;
   left: 0;
-  cursor: pointer;
   width: 100%;
   height: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#262626), to(#141414));
@@ -1641,10 +1629,6 @@ label {
   color: #ffffff;
   -webkit-box-shadow: 0 2px 20px #ec44f1;
   box-shadow: 0 2px 20px #ec44f1;
-}
-
-.label-inpt-C4 {
-  cursor: pointer;
 }
 
 .inpt-C4 {

@@ -10,6 +10,11 @@ body {
   counter-reset: section;
 }
 
+input,
+label {
+  cursor: pointer;
+}
+
 .main {
   display: flex;
   flex-direction: column;

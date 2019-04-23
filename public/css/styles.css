@@ -110,6 +110,11 @@ body {
   counter-reset: section;
 }
 
+input,
+label {
+  cursor: pointer;
+}
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;

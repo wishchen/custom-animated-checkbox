@@ -43,6 +43,7 @@ body {
   flex-direction: column;
   width: 100%;
   max-width: 350px;
+  min-width: 350px;
   height: 100%;
   border-radius: var(--border-radius);
   background-color: hsl(0, 0%, 98%);

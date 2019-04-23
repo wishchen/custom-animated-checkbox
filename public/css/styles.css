@@ -1608,6 +1608,68 @@ body {
 }
 
 /*-------- Input checkbox C-4 --------*/
+.container-inpt-C-4 {
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.container-inpt-C-4:nth-child(2n + 1) .label-inpt-C4 .inpt-C4:checked ~ .span-off-inpt-C4 {
+  background-color: #e9981e;
+  color: #ffffff;
+  -webkit-box-shadow: 0 2px 20px #e9981e;
+  box-shadow: 0 2px 20px #e9981e;
+}
+
+.container-inpt-C-4:nth-child(2n + 2) .label-inpt-C4 .inpt-C4:checked ~ .span-off-inpt-C4 {
+  background-color: #ec44f1;
+  color: #ffffff;
+  -webkit-box-shadow: 0 2px 20px #ec44f1;
+  box-shadow: 0 2px 20px #ec44f1;
+}
+
+.label-inpt-C4 {
+  cursor: pointer;
+}
+
+.inpt-C4 {
+  display: none;
+}
+
+.span-off-inpt-C4 {
+  position: relative;
+  display: block;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: #424242;
+  padding: 10px 20px;
+  color: #666666;
+  border-radius: 30px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+.span-off-inpt-C4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
 /*---------------------------------*/
 /*---------- Main footer ----------*/
 /*---------------------------------*/

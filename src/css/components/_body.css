@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  counter-reset: section; }
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh; }
+
+.main-section {
+  position: relative;
+  padding: 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: var(--body-bg); }
+
+.wrapper-section-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+  grid-template-columns: repeat(5, 1fr);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: var(--body-bg);
+  max-width: var(--big-max-width);
+  width: 100%;
+  padding: 60px 10px;
+  grid-gap: var(--gap); }
+
+.wrap-grid {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 0.5fr 2fr 0.5fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+  min-width: 350px;
+  height: 100%;
+  border-radius: var(--border-radius);
+  background-color: #fafafa;
+  border: 2px solid #d9d9d9;
+  z-index: var(--z-normal); }
+
+.dark {
+  background-color: var(--color-dark-bg);
+  border-radius: var(--border-radius);
+  z-index: var(--z-normal); }
+
+.rotate-box-180 {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg); }
+
+.box-cont {
+  position: relative;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+
+.box-input {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }

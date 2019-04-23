@@ -66,13 +66,17 @@ label:hover {
   transform: rotateY(180deg);
 }
 
-.box-cont {
-  position: relative;
-  display: block;
-  display: flex;
-  width: 100%;
-}
+// .box-cont {
+//   position: relative;
+//   display: flex;
+//   width: 100%;
+// }
 
 .box-input {
+  position: relative;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }

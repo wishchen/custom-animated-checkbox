@@ -192,19 +192,19 @@ label:hover {
   transform: rotateY(180deg);
 }
 
-.box-cont {
+.box-input {
   position: relative;
-  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-}
-
-.box-input {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 /*------ Marked box in wraps ------*/
@@ -317,7 +317,7 @@ label:hover {
 /*----------------------------------------------*/
 /*=============== Styles of BTNs ===============*/
 /*-------- Styles of inputs ROW-1 --------*/
-/*---------------------------------*/
+/*-#######################################*/
 /*-------- Input checkbox A-1 --------*/
 .inpt-A1 {
   margin: 30px;
@@ -554,7 +554,7 @@ label:hover {
 }
 
 /*-------- Styles of inputs ROW-2 --------*/
-/*---------------------------------*/
+/*-#######################################*/
 /*-------- Input checkbox A-2 --------*/
 .inpt-A2 {
   position: relative;
@@ -869,7 +869,7 @@ label:hover {
 }
 
 /*-------- Styles of inputs ROW-3 --------*/
-/*---------------------------------*/
+/*-#######################################*/
 /*-------- Input checkbox A-3 --------*/
 .box-inpt-A3 {
   position: absolute;
@@ -1361,7 +1361,7 @@ label:hover {
 }
 
 /*-------- Styles of inputs ROW-4 --------*/
-/*---------------------------------*/
+/*-#######################################*/
 /*-------- Input checkbox A-4 --------*/
 .label-inpt-A4 {
   position: relative;
@@ -1664,6 +1664,190 @@ label:hover {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
+/*-------- Input checkbox D-4 --------*/
+.inpt-D4[type="checkbox"] {
+  display: none;
+}
+
+.inpt-D4[type="checkbox"]:checked + .ht-ui-check:before {
+  background: #f5d8dd;
+}
+
+.inpt-D4[type="checkbox"]:checked + .ht-ui-check .track {
+  background: -webkit-linear-gradient(315deg, #e66465 0%, #9198e5 80%);
+  background: -o-linear-gradient(315deg, #e66465 0%, #9198e5 80%);
+  background: linear-gradient(135deg, #e66465 0%, #9198e5 80%);
+}
+
+.inpt-D4[type="checkbox"]:checked + .ht-ui-check .handle {
+  -webkit-transform: translateX(52.75px);
+  -ms-transform: translateX(52.75px);
+  transform: translateX(52.75px);
+}
+
+.inpt-D4[type="checkbox"]:checked + .ht-ui-check .handle .faces {
+  -webkit-transform: translateX(-82.5px);
+  -ms-transform: translateX(-82.5px);
+  transform: translateX(-82.5px);
+}
+
+.ht-ui-check {
+  position: relative;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.ht-ui-check:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #eee;
+  -webkit-transition: 0.3s ease-out all;
+  -o-transition: 0.3s ease-out all;
+  transition: 0.3s ease-out all;
+}
+
+.ht-ui-check .handle,
+.ht-ui-check .track {
+  position: absolute;
+  z-index: 10;
+  -webkit-transition: ease-out all 0.23s;
+  -o-transition: ease-out all 0.23s;
+  transition: ease-out all 0.23s;
+  border-radius: 50px;
+}
+
+.ht-ui-check .track {
+  display: block;
+  width: 107.5px;
+  height: 62.5px;
+  background: #5e5f56;
+}
+
+.ht-ui-check .handle {
+  display: block;
+  height: 47.5px;
+  width: 47.5px;
+  background: white;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.13);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.13);
+  -webkit-transform: translateX(7.5px);
+  -ms-transform: translateX(7.5px);
+  transform: translateX(7.5px);
+  overflow: hidden;
+}
+
+.faces {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: no-wrap;
+  flex-wrap: no-wrap;
+  width: 100px;
+  font-size: 17.5px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-transition: 0.3s ease-out all 0.1s;
+  -o-transition: 0.3s ease-out all 0.1s;
+  transition: 0.3s ease-out all 0.1s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.faces .sad {
+  position: relative;
+  top: 17.5px;
+  left: 5px;
+  color: #5e5f56;
+  line-height: 1em;
+}
+
+.faces .sad .eyes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.faces .sad .eyes div {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.faces .sad .mouth {
+  margin-left: 6px;
+  line-height: 0em;
+  font-weight: 400;
+}
+
+.faces .happy {
+  color: #5e5f56;
+  position: relative;
+  top: 7.5px;
+  left: 25px;
+  line-height: 0.85;
+}
+
+.faces .happy:after {
+  content: "";
+  width: 7.5px;
+  height: 7.5px;
+  display: block;
+  position: absolute;
+  top: 12.5px;
+  left: -5px;
+  border-radius: 50%;
+  background: #f5d8dd;
+}
+
+.faces .happy .eyes {
+  font-family: "Roboto Mono", courier;
+}
+
+.faces .happy .mouth {
+  margin-left: 0em;
+  margin-top: -3.75px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 22.5px;
+}
+
+/*-------- Input checkbox E-4 --------*/
+/*-------- Styles of inputs ROW-5 --------*/
+/*-#######################################*/
+/*-------- Input checkbox A-5 --------*/
+/*-------- Input checkbox B-5 --------*/
+/*-------- Input checkbox C-5 --------*/
+/*-------- Input checkbox D-5 --------*/
+/*-------- Input checkbox E-5 --------*/
+/*-------- Styles of inputs ROW-6 --------*/
+/*-#######################################*/
+/*-------- Input checkbox A-6 --------*/
+/*-------- Input checkbox B-6 --------*/
+/*-------- Input checkbox C-6 --------*/
+/*-------- Input checkbox D-6 --------*/
+/*-------- Input checkbox E-6 --------*/
+/*-------- Styles of inputs ROW-7 --------*/
+/*-#######################################*/
+/*-------- Input checkbox A-7 --------*/
+/*-------- Input checkbox B-7 --------*/
+/*-------- Input checkbox C-7 --------*/
+/*-------- Input checkbox D-7 --------*/
+/*-------- Input checkbox E-7 --------*/
 /*---------------------------------*/
 /*---------- Main footer ----------*/
 /*---------------------------------*/

@@ -11,7 +11,7 @@
 .main-header-items {
   display: grid;
   flex-direction: row;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, auto);
   align-items: center;
   justify-content: space-between;
   max-width: var(--big-max-width);
@@ -19,19 +19,18 @@
   height: 100%;
 }
 
-.link-logo,
-.link-title-h1 {
+.svg-logo {
   text-decoration: none;
   display: block;
-}
-
-.svg-logo {
   height: 100%;
   height: var(--h1-font-size);
 }
 
-.link-title-h1 {
-  width: 100%;
-  height: 100%;
-  height: var(--h1-font-size);
+.title-h1.main-title {
+  position: relative;
+  align-items: center;
+  font-family: var(--heading-font);
+  font-size: var(--h1-font-size);
+  z-index: var(--z-normal);
+  color: var(--color-text);
 }

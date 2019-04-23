@@ -1495,6 +1495,118 @@ body {
 }
 
 /*-------- Input checkbox B-4 --------*/
+.box-inpt-B4 {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-perspective: 200px;
+  perspective: 200px;
+  border: 2px solid #000000;
+  border-radius: 20px;
+}
+
+.inpt-B4 {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  -webkit-transition: var(--transition-05);
+  -o-transition: var(--transition-05);
+  transition: var(--transition-05);
+}
+
+.inpt-B4:checked ~ .span-on-inpt-B4::before {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.inpt-B4:checked ~ .span-off-inpt-B4::before {
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+.span-inpt-B4 {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #ffffff;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  font-family: var(--body-font);
+  font-size: var(--small-font-size);
+}
+
+.span-off-inpt-B4 {
+  right: 0;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: #f00;
+}
+
+.span-off-inpt-B4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#0cd20c), to(#0f0));
+  background-image: -webkit-linear-gradient(left, #0cd20c, #0f0);
+  background-image: -o-linear-gradient(left, #0cd20c, #0f0);
+  background-image: linear-gradient(90deg, #0cd20c, #0f0);
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  -webkit-transition: var(--transition-05);
+  -o-transition: var(--transition-05);
+  transition: var(--transition-05);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.span-on-inpt-B4 {
+  left: 0;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  background-color: #0f0;
+}
+
+.span-on-inpt-B4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f00), to(#d30808));
+  background-image: -webkit-linear-gradient(left, #f00, #d30808);
+  background-image: -o-linear-gradient(left, #f00, #d30808);
+  background-image: linear-gradient(90deg, #f00, #d30808);
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  -webkit-transform-origin: right;
+  -ms-transform-origin: right;
+  transform-origin: right;
+  -webkit-transition: var(--transition-05);
+  -o-transition: var(--transition-05);
+  transition: var(--transition-05);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
 /*---------------------------------*/
 /*---------- Main footer ----------*/
 /*---------------------------------*/

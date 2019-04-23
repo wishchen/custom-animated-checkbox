@@ -1137,6 +1137,135 @@ body {
 }
 
 /*-------- Input checkbox D-3 --------*/
+.list-inpt-D3 {
+  padding: 0px 10px;
+  border: 2px dashed black;
+}
+
+.list-item-inpy-D3 {
+  list-style: none;
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+.inpt-D3 {
+  display: none;
+}
+
+.inpt-D3:checked ~ .span-text-inpt-D3 {
+  color: #ccc;
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.inpt-D3:checked ~ .span-text-inpt-D3::before {
+  left: 100%;
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.inpt-D3:checked ~ .span-text-inpt-D3::after {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.inpt-D3:checked ~ .span-icon-inpt-D3:before {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+.span-icon-inpt-D3 {
+  position: relative;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  border: 1px solid #262626;
+  margin-right: 5px;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.span-icon-inpt-D3::before {
+  content: "x";
+  position: absolute;
+  top: -5px;
+  left: 3px;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.span-text-inpt-D3 {
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0 5px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.span-text-inpt-D3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150px;
+  width: 100%;
+  height: 100%;
+  background-color: #ff3663;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.span-text-inpt-D3::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
 /*---------------------------------*/
 /*---------- Main footer ----------*/
 /*---------------------------------*/

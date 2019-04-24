@@ -1,0 +1,79 @@
+// Base class
+.emoji-toggle-inpt-C6 {
+  position: relative;
+  width: 90px;
+  .label-inpt-C6 {
+    display: block;
+    background: rgb(182, 182, 182);
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .inpt-C6 {
+    opacity: 0;
+    border: 0;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    ~ .emoji-inpt-C6:before {
+      content: "\01F431";
+      position: absolute;
+      left: -10px;
+      top: -20px;
+      font-size: 40px;
+      transition: 0.2s;
+    }
+    &:checked {
+      ~ .emoji-inpt-C6:before {
+        left: 100%;
+        margin-left: -1em;
+      }
+    }
+    ~ .label-inpt-C6 {
+      white-space: nowrap;
+      &:before,
+      &:after {
+        position: absolute;
+        top: 0;
+      }
+
+      &:before {
+        right: 100%;
+        margin-right: 10px;
+      }
+      &:after {
+        left: 100%;
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+@mixin emojiType($leftEmoji, $rightEmoji, $leftLabel, $rightLabel) {
+  .inpt-C6 {
+    ~ .emoji-inpt-C6:before {
+      content: $leftEmoji;
+    }
+    &:checked {
+      ~ .emoji-inpt-C6:before {
+        content: $rightEmoji;
+      }
+    }
+    ~ .label-inpt-C6 {
+      &:before {
+        content: $leftLabel;
+      }
+      &:after {
+        content: $rightLabel;
+      }
+    }
+  }
+}
+
+.emoji-happy-inpt-C6 {
+  @include emojiType("\01F604", "\01F620", "Happy", "Mad");
+  font-family: var(--body-font);
+  font-size: var(--small-font-size);
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*----------- variables -----------*/
 /*---------------------------------*/
 :root {
@@ -3597,6 +3598,85 @@ input:checked + .toggle + .bear-body {
 }
 
 /*-------- Input checkbox C-6 --------*/
+.emoji-toggle-inpt-C6 {
+  position: relative;
+  width: 90px;
+}
+
+.emoji-toggle-inpt-C6 .label-inpt-C6 {
+  display: block;
+  background: #b6b6b6;
+  height: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.emoji-toggle-inpt-C6 .inpt-C6 {
+  opacity: 0;
+  border: 0;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  position: absolute;
+}
+
+.emoji-toggle-inpt-C6 .inpt-C6 ~ .emoji-inpt-C6:before {
+  content: "\01F431";
+  position: absolute;
+  left: -10px;
+  top: -20px;
+  font-size: 40px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.emoji-toggle-inpt-C6 .inpt-C6:checked ~ .emoji-inpt-C6:before {
+  left: 100%;
+  margin-left: -1em;
+}
+
+.emoji-toggle-inpt-C6 .inpt-C6 ~ .label-inpt-C6 {
+  white-space: nowrap;
+}
+
+.emoji-toggle-inpt-C6 .inpt-C6 ~ .label-inpt-C6:before, .emoji-toggle-inpt-C6 .inpt-C6 ~ .label-inpt-C6:after {
+  position: absolute;
+  top: 0;
+}
+
+.emoji-toggle-inpt-C6 .inpt-C6 ~ .label-inpt-C6:before {
+  right: 100%;
+  margin-right: 10px;
+}
+
+.emoji-toggle-inpt-C6 .inpt-C6 ~ .label-inpt-C6:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.emoji-happy-inpt-C6 {
+  font-family: var(--body-font);
+  font-size: var(--small-font-size);
+}
+
+.emoji-happy-inpt-C6 .inpt-C6 ~ .emoji-inpt-C6:before {
+  content: "😄";
+}
+
+.emoji-happy-inpt-C6 .inpt-C6:checked ~ .emoji-inpt-C6:before {
+  content: "😠";
+}
+
+.emoji-happy-inpt-C6 .inpt-C6 ~ .label-inpt-C6:before {
+  content: "Happy";
+}
+
+.emoji-happy-inpt-C6 .inpt-C6 ~ .label-inpt-C6:after {
+  content: "Mad";
+}
+
 /*-------- Input checkbox D-6 --------*/
 /*-------- Input checkbox E-6 --------*/
 /*-------- Styles of inputs ROW-7 --------*/

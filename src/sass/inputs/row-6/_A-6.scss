@@ -1,0 +1,87 @@
+$w: 10rem;
+$h: 0.5 * $w;
+$a: 90deg 22.5deg 22.5deg;
+
+.cont-inpt-A6 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.5);
+  perspective-origin: calc(50% + #{$w}) calc(50% - #{$w});
+  perspective: 32em;
+  // background: radial-gradient(#e5e5e5, #ddd);
+}
+.inpt-A6 {
+  position: absolute;
+  display: none;
+  + .label-inpt-A6 {
+    --s: 0;
+    position: relative;
+    border: solid 0.125 * $h #f0f0f0;
+    width: $w;
+    height: $h;
+    border-radius: $h;
+    transform-style: preserve-3d;
+    transform: rotatex(nth($a, 1)) rotate(nth($a, 3)) rotatey(nth($a, 2));
+    box-shadow: 0.5rem 0.875rem 0 -0.25rem #e0e0e0,
+      0.625rem 0.625rem 0 -0.25rem #e0e0e0,
+      0.5rem 0.875rem 0.625rem -0.125rem rgba(#bfbfbf, 0.75),
+      inset 0.125rem -0.125rem 0.5rem rgba(#f5f5f5, 0.5),
+      inset 0.75rem 0.75rem #dfdfdf,
+      inset 0.75rem 0.75rem 0.75rem rgba(#bfbfbf, 0.85),
+      inset 0 1rem 0.75rem rgba(#bfbfbf, 0.65);
+    color: transparent;
+    font-size: 0;
+
+    &:before,
+    &:after {
+      position: absolute;
+      width: $h;
+      height: $h;
+      border-radius: 50%;
+      transition: 0.35s cubic-bezier(0.21, 0.61, 0.35, 1);
+      content: "";
+    }
+
+    &:before {
+      top: calc(50% + 0.875rem);
+      transform-origin: 100% 0;
+      transform: translate(calc(var(--s) * (100% + 1rem))) scale(0.8)
+        skewx(-22.5deg);
+      background: radial-gradient(
+        at 50% 25%,
+        rgba(#a0a0a0, 0.65),
+        transparent 70%
+      );
+      filter: blur(3px);
+    }
+
+    &:after {
+      top: 0.875rem;
+      left: 0.75rem;
+      transform: translate(calc(var(--s) * (100% + 1rem)))
+        rotatey(-1 * nth($a, 2)) rotate(-1 * nth($a, 3))
+        rotatex(-1 * nth($a, 1)) translatey(-50%) rotate(45deg);
+      box-shadow: -1px 1px 0.125rem rgba(#ceffce, 0.5);
+      background: radial-gradient(at 0 50%, #52a066, transparent 0.5 * $h) 0 50%/
+          65% 50% no-repeat,
+        radial-gradient(
+            at 50% 0%,
+            #88d1a0 15%,
+            #68b47d 35%,
+            #66b47b,
+            #77c28e 65%
+          )
+          50%/ 200%;
+      filter: Grayscale(calc(1 - var(--s)));
+    }
+  }
+
+  &:checked + .label-inpt-A6 {
+    --s: 1;
+  }
+}

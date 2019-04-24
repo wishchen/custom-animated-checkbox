@@ -3243,6 +3243,97 @@ input:checked ~ .pizza .inner {
 /*-------- Styles of inputs ROW-6 --------*/
 /*-#######################################*/
 /*-------- Input checkbox A-6 --------*/
+.cont-inpt-A6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-perspective-origin: calc(50% + 10rem) calc(50% - 10rem);
+  perspective-origin: calc(50% + 10rem) calc(50% - 10rem);
+  -webkit-perspective: 32em;
+  perspective: 32em;
+}
+
+.inpt-A6 {
+  position: absolute;
+  display: none;
+}
+
+.inpt-A6 + .label-inpt-A6 {
+  --s: 0;
+  position: relative;
+  border: solid 0.625rem #f0f0f0;
+  width: 10rem;
+  height: 5rem;
+  border-radius: 5rem;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotatex(90deg) rotate(22.5deg) rotatey(22.5deg);
+  -ms-transform: rotatex(90deg) rotate(22.5deg) rotatey(22.5deg);
+  transform: rotatex(90deg) rotate(22.5deg) rotatey(22.5deg);
+  -webkit-box-shadow: 0.5rem 0.875rem 0 -0.25rem #e0e0e0, 0.625rem 0.625rem 0 -0.25rem #e0e0e0, 0.5rem 0.875rem 0.625rem -0.125rem rgba(191, 191, 191, 0.75), inset 0.125rem -0.125rem 0.5rem rgba(245, 245, 245, 0.5), inset 0.75rem 0.75rem #dfdfdf, inset 0.75rem 0.75rem 0.75rem rgba(191, 191, 191, 0.85), inset 0 1rem 0.75rem rgba(191, 191, 191, 0.65);
+  box-shadow: 0.5rem 0.875rem 0 -0.25rem #e0e0e0, 0.625rem 0.625rem 0 -0.25rem #e0e0e0, 0.5rem 0.875rem 0.625rem -0.125rem rgba(191, 191, 191, 0.75), inset 0.125rem -0.125rem 0.5rem rgba(245, 245, 245, 0.5), inset 0.75rem 0.75rem #dfdfdf, inset 0.75rem 0.75rem 0.75rem rgba(191, 191, 191, 0.85), inset 0 1rem 0.75rem rgba(191, 191, 191, 0.65);
+  color: transparent;
+  font-size: 0;
+}
+
+.inpt-A6 + .label-inpt-A6:before, .inpt-A6 + .label-inpt-A6:after {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  -webkit-transition: 0.35s cubic-bezier(0.21, 0.61, 0.35, 1);
+  -o-transition: 0.35s cubic-bezier(0.21, 0.61, 0.35, 1);
+  transition: 0.35s cubic-bezier(0.21, 0.61, 0.35, 1);
+  content: "";
+}
+
+.inpt-A6 + .label-inpt-A6:before {
+  top: calc(50% + 0.875rem);
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: translate(calc(var(--s) * (100% + 1rem))) scale(0.8) skewx(-22.5deg);
+  -ms-transform: translate(calc(var(--s) * (100% + 1rem))) scale(0.8) skewx(-22.5deg);
+  transform: translate(calc(var(--s) * (100% + 1rem))) scale(0.8) skewx(-22.5deg);
+  background: -webkit-radial-gradient(at 50% 25%, rgba(160, 160, 160, 0.65), transparent 70%);
+  background: -o-radial-gradient(at 50% 25%, rgba(160, 160, 160, 0.65), transparent 70%);
+  background: radial-gradient(at 50% 25%, rgba(160, 160, 160, 0.65), transparent 70%);
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+
+.inpt-A6 + .label-inpt-A6:after {
+  top: 0.875rem;
+  left: 0.75rem;
+  -webkit-transform: translate(calc(var(--s) * (100% + 1rem))) rotatey(-22.5deg) rotate(-22.5deg) rotatex(-90deg) translatey(-50%) rotate(45deg);
+  -ms-transform: translate(calc(var(--s) * (100% + 1rem))) rotatey(-22.5deg) rotate(-22.5deg) rotatex(-90deg) translatey(-50%) rotate(45deg);
+  transform: translate(calc(var(--s) * (100% + 1rem))) rotatey(-22.5deg) rotate(-22.5deg) rotatex(-90deg) translatey(-50%) rotate(45deg);
+  -webkit-box-shadow: -1px 1px 0.125rem rgba(206, 255, 206, 0.5);
+  box-shadow: -1px 1px 0.125rem rgba(206, 255, 206, 0.5);
+  background: -webkit-radial-gradient(at 0 50%, #52a066, transparent 2.5rem) 0 50%/65% 50% no-repeat, -webkit-radial-gradient(at 50% 0%, #88d1a0 15%, #68b47d 35%, #66b47b, #77c28e 65%) 50%/200%;
+  background: -o-radial-gradient(at 0 50%, #52a066, transparent 2.5rem) 0 50%/65% 50% no-repeat, -o-radial-gradient(at 50% 0%, #88d1a0 15%, #68b47d 35%, #66b47b, #77c28e 65%) 50%/200%;
+  background: radial-gradient(at 0 50%, #52a066, transparent 2.5rem) 0 50%/65% 50% no-repeat, radial-gradient(at 50% 0%, #88d1a0 15%, #68b47d 35%, #66b47b, #77c28e 65%) 50%/200%;
+  -webkit-filter: Grayscale(calc(1 - var(--s)));
+  filter: Grayscale(calc(1 - var(--s)));
+}
+
+.inpt-A6:checked + .label-inpt-A6 {
+  --s: 1;
+}
+
 /*-------- Input checkbox B-6 --------*/
 /*-------- Input checkbox C-6 --------*/
 /*-------- Input checkbox D-6 --------*/

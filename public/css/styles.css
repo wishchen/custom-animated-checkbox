@@ -3475,6 +3475,127 @@ input:checked + .toggle + .bear-body {
 }
 
 /*-------- Input checkbox B-6 --------*/
+.toggles-inpt-B6 {
+  width: 100%;
+  height: 100%;
+  background: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.toggle-border-inpt-B6 {
+  width: 200px;
+  height: 80px;
+  border: 2px solid #f0ebeb;
+  border-radius: 130px;
+  background: -webkit-gradient(linear, left top, right bottom, from(white), to(rgba(220, 220, 220, 0.5))), white;
+  background: -webkit-linear-gradient(top left, white, rgba(220, 220, 220, 0.5)), white;
+  background: -o-linear-gradient(top left, white, rgba(220, 220, 220, 0.5)), white;
+  background: linear-gradient(to bottom right, white, rgba(220, 220, 220, 0.5)), white;
+  -webkit-box-shadow: 0 0 0 2px #fbfbfb;
+  box-shadow: 0 0 0 2px #fbfbfb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.inpt-B6[type="checkbox"] {
+  display: none;
+}
+
+.label-inpt-B6 {
+  position: relative;
+  display: inline-block;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 150px;
+  height: 30px;
+  background: #d13613;
+  border-radius: 80px;
+  -webkit-box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.3);
+  -webkit-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  transition: background 0.5s;
+}
+
+.label-inpt-B6:after, .label-inpt-B6:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -50px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f0ebeb;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 1px #fbfbfb, inset 1px 3px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 1px #fbfbfb, inset 1px 3px 6px rgba(0, 0, 0, 0.3);
+  background: #d13613;
+  -webkit-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  transition: background 0.5s;
+}
+
+.label-inpt-B6:before {
+  left: calc(100% + 50px - 20px);
+  background: #d1cac9;
+}
+
+.inpt-B6:checked + .label-inpt-B6 {
+  background: #13d162;
+}
+
+.handle-inpt-B6 {
+  position: absolute;
+  top: -15px;
+  left: -5px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
+  background: -webkit-repeating-radial-gradient(50% 50%, circle, rgba(200, 200, 200, 0.2) 0%, rgba(200, 200, 200, 0.2) 2%, transparent 2%, transparent 3%, rgba(200, 200, 200, 0.2) 3%, transparent 3%), conic-gradient(white 0%, silver 10%, white 35%, silver 45%, white 60%, silver 70%, white 80%, silver 95%, white 100%);
+  background: -o-repeating-radial-gradient(50% 50%, circle, rgba(200, 200, 200, 0.2) 0%, rgba(200, 200, 200, 0.2) 2%, transparent 2%, transparent 3%, rgba(200, 200, 200, 0.2) 3%, transparent 3%), conic-gradient(white 0%, silver 10%, white 35%, silver 45%, white 60%, silver 70%, white 80%, silver 95%, white 100%);
+  background: repeating-radial-gradient(circle at 50% 50%, rgba(200, 200, 200, 0.2) 0%, rgba(200, 200, 200, 0.2) 2%, transparent 2%, transparent 3%, rgba(200, 200, 200, 0.2) 3%, transparent 3%), conic-gradient(white 0%, silver 10%, white 35%, silver 45%, white 60%, silver 70%, white 80%, silver 95%, white 100%);
+  border-radius: 50%;
+  -webkit-box-shadow: 3px 5px 10px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 5px 10px 0 rgba(0, 0, 0, 0.4);
+  -webkit-transition: left 0.4s;
+  -o-transition: left 0.4s;
+  transition: left 0.4s;
+}
+
+.inpt-B6[type="checkbox"]:checked + .label-inpt-B6 > .handle-inpt-B6 {
+  left: calc(100% - 55px);
+}
+
+.inpt-B6[type="checkbox"]:checked + .label-inpt-B6:after {
+  background: #d1cac9;
+}
+
+.inpt-B6[type="checkbox"]:checked + .label-inpt-B6:before {
+  background: #13d162;
+}
+
 /*-------- Input checkbox C-6 --------*/
 /*-------- Input checkbox D-6 --------*/
 /*-------- Input checkbox E-6 --------*/

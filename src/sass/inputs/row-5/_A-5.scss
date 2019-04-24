@@ -1,4 +1,4 @@
-.toggleWrapper {
+.toggleWrapper-inpt-A5 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -10,7 +10,7 @@
   position: absolute;
   display: none;
 }
-.toggle {
+.label-inpt-A5 {
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -151,8 +151,8 @@
   transform: translate3d(3px, 0, 0);
 }
 
-input:checked {
-  + .toggle {
+.inpt-A5:checked {
+  + .label-inpt-A5 {
     background-color: #749dd6;
 
     &:before {

@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*----------- variables -----------*/
 /*---------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:700,900");
 :root {
   /*--- Typography variables ---*/
   --body-font: "Montserrat", sans-serif;
@@ -3678,6 +3679,253 @@ input:checked + .toggle + .bear-body {
 }
 
 /*-------- Input checkbox D-6 --------*/
+.smile-rating-container-inpt-D6 {
+  position: relative;
+  max-width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.submit-rating-inpt-D6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.rating-label-inpt-D6 {
+  position: relative;
+  font-size: 1.6em;
+  text-align: center;
+  -webkit-box-flex: 0.34;
+  -ms-flex: 0.34;
+  flex: 0.34;
+  z-index: 3;
+  font-weight: bold;
+  color: #d0cccd;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
+
+.rating-label-inpt-D6:hover,
+.rating-label-inpt-D6:active {
+  color: #d0cccd;
+}
+
+.rating-label-fun-inpt-D6 {
+  left: 10px;
+  text-align: right;
+}
+
+.rating-label-meh-inpt-D6 {
+  left: 40px;
+  text-align: left;
+  color: #222;
+}
+
+.smile-rating-container-inpt-D6 input {
+  display: none;
+}
+
+.toggle-rating-pill-inpt-D6 {
+  position: relative;
+  height: 65px;
+  width: 165px;
+  background: #d0cccd;
+  border-radius: 500px;
+  -webkit-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.smile-rating-toggle-inpt-D6 {
+  position: relative;
+  width: 54px;
+  height: 54px;
+  background-color: white;
+  left: 60px;
+  border-radius: 500px;
+  -webkit-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+  z-index: 4;
+}
+
+.rating-eye-inpt-D6 {
+  position: absolute;
+  height: 12px;
+  width: 8px;
+  background: #d0cccd;
+  border-radius: 500px;
+  z-index: 5;
+  -webkit-transition: all 440ms;
+  -o-transition: all 440ms;
+  transition: all 440ms;
+  -webkit-animation: blink-eye 3s infinite;
+  animation: blink-eye 3s infinite;
+}
+
+@-webkit-keyframes blink-eye {
+  0% {
+    height: 12px;
+    width: 8px;
+    top: 22px;
+  }
+  20% {
+    height: 12px;
+    width: 8px;
+    top: 22px;
+  }
+  40% {
+    height: 12px;
+    width: 8px;
+    top: 22px;
+  }
+  60% {
+    height: 12px;
+    width: 8px;
+    top: 22px;
+  }
+  80% {
+    height: 12px;
+    width: 8px;
+    top: 22px;
+  }
+  90% {
+    height: 12px;
+    width: 8px;
+    top: 22px;
+  }
+  95% {
+    height: 2px;
+    width: 8px;
+    top: 30px;
+  }
+  100% {
+    height: 12px;
+    width: 8px;
+    top: 22px;
+  }
+}
+
+@keyframes blink-eye {
+  0% {
+    height: 12px;
+    width: 8px;
+    top: 22px;
+  }
+  20% {
+    height: 12px;
+    width: 8px;
+    top: 22px;
+  }
+  40% {
+    height: 12px;
+    width: 8px;
+    top: 22px;
+  }
+  60% {
+    height: 12px;
+    width: 8px;
+    top: 22px;
+  }
+  80% {
+    height: 12px;
+    width: 8px;
+    top: 22px;
+  }
+  90% {
+    height: 12px;
+    width: 8px;
+    top: 22px;
+  }
+  95% {
+    height: 2px;
+    width: 8px;
+    top: 30px;
+  }
+  100% {
+    height: 12px;
+    width: 8px;
+    top: 22px;
+  }
+}
+
+.rating-eye-left-inpt-D6 {
+  left: 15px;
+}
+
+.rating-eye-right-inpt-D6 {
+  left: 30px;
+}
+
+.mouth-inpt-D6 {
+  position: absolute;
+  width: 28px;
+  height: 20px;
+  z-index: 6;
+  border: 4px solid #d0cccd;
+  border-radius: 10%;
+  border-bottom-color: rgba(1, 1, 1, 0);
+  border-right-color: rgba(1, 1, 1, 0);
+  border-left-color: rgba(1, 1, 1, 0);
+  top: 42px;
+  left: 13px;
+  -webkit-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+}
+
+/*
+Toggle Changes
+*/
+#meh-inpt-D6:checked ~ .rating-label-meh-inpt-D6 {
+  color: #555e63;
+}
+
+#fun-inpt-D6:checked ~ .rating-label-meh-inpt-D6 {
+  color: #d0cccd;
+}
+
+#fun-inpt-D6:checked ~ .smile-rating-toggle-inpt-D6 .mouth-inpt-D6 {
+  border: 4px solid #00b9ee;
+  border-top-color: rgba(1, 1, 1, 0);
+  border-right-color: rgba(1, 1, 1, 0);
+  border-left-color: rgba(1, 1, 1, 0);
+  top: 25px;
+  left: 13px;
+  border-radius: 100%;
+}
+
+#fun-inpt-D6:checked ~ .rating-label-fun-inpt-D6 {
+  color: #555e63;
+}
+
+#fun-inpt-D6:checked ~ .smile-rating-toggle-inpt-D6 {
+  left: 160px;
+}
+
+#fun-inpt-D6:checked ~ .rating-eye-left-inpt-D6 {
+  left: 92px;
+}
+
+#fun-inpt-D6:checked ~ .rating-eye-right-inpt-D6 {
+  left: 16px;
+}
+
+#fun-inpt-D6:checked ~ .toggle-rating-pill-inpt-D6 {
+  background-color: #00b9ee;
+}
+
+#fun-inpt-D6:checked ~ .smile-rating-toggle-inpt-D6 .rating-eye-inpt-D6 {
+  background-color: #00b9ee;
+}
+
 /*-------- Input checkbox E-6 --------*/
 /*-------- Styles of inputs ROW-7 --------*/
 /*-#######################################*/

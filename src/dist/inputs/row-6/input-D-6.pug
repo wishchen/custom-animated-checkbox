@@ -3,9 +3,19 @@
     span.span-box-marked D-6
 
 
-  .box-cont.box-input
-    input.inpt-D6(type="checkbox", name="")
-          
+  .box-cont.box-input   
+    .smile-rating-container-inpt-D6
+      .smile-rating-toggle-container-inpt-D6
+        form.submit-rating-inpt-D6
+          input#meh-inpt-D6(name='satisfaction', type='radio')
+          input#fun-inpt-D6(name='satisfaction', type='radio')
+          label.rating-label-inpt-D6.rating-label-meh-inpt-D6(for='meh-inpt-D6') Bad
+          .smile-rating-toggle-inpt-D6
+            .rating-eye-inpt-D6.rating-eye-left-inpt-D6
+            .rating-eye-inpt-D6.rating-eye-right-inpt-D6
+            .mouth-inpt-D6.rating-eye-bad-mouth-inpt-D6
+          .toggle-rating-pill-inpt-D6
+          label.rating-label-inpt-D6.rating-label-fun-inpt-D6(for='fun-inpt-D6') Fun
 
   .box-cont.box-download
     .btn-download-wrap

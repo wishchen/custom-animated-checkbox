@@ -4022,6 +4022,97 @@ Toggle Changes
 /*-------- Styles of inputs ROW-7 --------*/
 /*-#######################################*/
 /*-------- Input checkbox A-7 --------*/
+.box-inpt-A7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.box-inpt-A7:after, .box-inpt-A7:before {
+  content: ":";
+  left: 10px;
+  top: 0;
+  font-size: 3rem;
+  position: absolute;
+  z-index: 2;
+  color: #3cb300;
+}
+
+.box-inpt-A7:before {
+  left: auto;
+  right: 5px;
+  color: #b7b7b7;
+}
+
+.label-inpt-A7 {
+  height: 70px;
+  width: 150px;
+  background: #f5f2f0;
+  border-radius: 50px;
+  position: relative;
+  display: inline-block;
+  font-family: var(--body-font);
+  content: ":";
+}
+
+.label-inpt-A7:before {
+  content: ")";
+  color: #3cb300;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 1.3em;
+  top: 0.7em;
+  -webkit-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.label-inpt-A7:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 20px;
+  width: 50px;
+  border-radius: 50vw;
+  -webkit-box-shadow: 33px 18px 26px -13px rgba(0, 0, 0, 0.17);
+  box-shadow: 33px 18px 26px -13px rgba(0, 0, 0, 0.17);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  -o-transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+.inpt-A7 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.inpt-A7:checked + .label-inpt-A7:before {
+  -webkit-transform: translateX(85px);
+  -ms-transform: translateX(85px);
+  transform: translateX(85px);
+  color: #b7b7b7;
+}
+
+.inpt-A7:checked + .label-inpt-A7:after {
+  -webkit-box-shadow: -33px 18px 26px -13px rgba(0, 0, 0, 0.17);
+  box-shadow: -33px 18px 26px -13px rgba(0, 0, 0, 0.17);
+}
+
 /*-------- Input checkbox B-7 --------*/
 /*-------- Input checkbox C-7 --------*/
 /*-------- Input checkbox D-7 --------*/

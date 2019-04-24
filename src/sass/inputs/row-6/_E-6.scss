@@ -1,0 +1,78 @@
+/* for the lazy */
+@import url(https://fonts.googleapis.com/css?family=Sanchez);
+
+.inpt-E6[type="checkbox"] {
+  display: none;
+}
+
+.inpt-E6[type="checkbox"]:checked ~ .box-label-inpt-E6 {
+  background: rgba(73, 168, 68, 1);
+  box-shadow: 0 0 2px rgba(73, 168, 68, 1);
+}
+
+.inpt-E6[type="checkbox"]:checked ~ .box-label-inpt-E6 .label-inpt-E6 {
+  left: 90px;
+  transform: rotate(360deg);
+}
+
+.box-label-inpt-E6,
+.label-inpt-E6 {
+  border-radius: 50px;
+  transition: 400ms all ease-in-out 50ms;
+}
+
+.box-label-inpt-E6 {
+  height: 70px;
+  width: 150px;
+  background: rgba(43, 43, 43, 1);
+  position: relative;
+  box-shadow: 0 0 2px rgba(43, 43, 43, 1);
+}
+.label-inpt-E6 {
+  height: 50px;
+  width: 50px;
+  background: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.label-inpt-E6::before {
+  content: "";
+  height: 60px;
+  width: 5px;
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 2.5px);
+  transform: rotate(45deg) scale(0.7);
+}
+
+.label-inpt-E6::after {
+  content: "";
+  height: 5px;
+  width: 60px;
+  position: absolute;
+  top: calc(50% - 2.5px);
+  left: calc(50% - 30px);
+  transform: rotate(45deg) scale(0.7);
+}
+
+.label-inpt-E6::before,
+.label-inpt-E6::after {
+  background: rgba(43, 43, 43, 1);
+  border-radius: 5px;
+  transition: 400ms all ease-in-out 50ms;
+}
+
+.inpt-E6[type="checkbox"]:checked ~ .box-label-inpt-E6 .label-inpt-E6::before {
+  height: 50px;
+  top: calc(55% - 25px);
+  left: calc(60% - 2.5px);
+  background: rgba(73, 168, 68, 1);
+}
+.inpt-E6[type="checkbox"]:checked ~ .box-label-inpt-E6 .label-inpt-E6::after {
+  width: 20px;
+  top: calc(110% - 22px);
+  left: calc(19.5% - 5px);
+  background: rgba(73, 168, 68, 1);
+}

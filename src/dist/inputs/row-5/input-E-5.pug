@@ -4,7 +4,13 @@
 
 
   .box-cont.box-input
-    input.inpt-E5(type="checkbox", name="")
+    .toggleWrapper-inpt-E5
+      input#label-inpt-E5.inpt-E5(type='checkbox')
+      label.toggle.label-inpt-E5(for='label-inpt-E5')
+        span.toggle__handler-inpt-E5
+      .bear-body
+        span.eye.left
+        span.eye.right
 
 
   .box-cont.box-download

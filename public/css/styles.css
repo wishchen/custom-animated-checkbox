@@ -1,8 +1,6 @@
 @charset "UTF-8";
 /*----------- variables -----------*/
 /*---------------------------------*/
-@import url("https://fonts.googleapis.com/css?family=Roboto:700,900");
-@import url(https://fonts.googleapis.com/css?family=Sanchez);
 :root {
   /*--- Typography variables ---*/
   --body-font: "Montserrat", sans-serif;
@@ -2178,9 +2176,7 @@ label:hover {
   box-shadow: 0 5px 25px -15px #676550;
   position: relative;
   border-radius: 100px;
-  opacity: 0;
-  -webkit-animation: fadein 1.5s ease-in 1 forwards;
-  animation: fadein 1.5s ease-in 1 forwards;
+  opacity: 1;
 }
 
 .toggle-inpt-B5:before {
@@ -2338,38 +2334,6 @@ label:hover {
   }
 }
 
-@-webkit-keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
 .inpt-B5 {
   opacity: 0;
   display: block;
@@ -2454,7 +2418,7 @@ label:hover {
   border-radius: 100%;
 }
 
-input:checked ~ .shadow {
+.inpt-B5:checked ~ .shadow {
   -webkit-animation: shadowslide 0.75s linear 1 forwards;
   animation: shadowslide 0.75s linear 1 forwards;
 }
@@ -2497,12 +2461,12 @@ input:checked ~ .shadow {
   }
 }
 
-input:checked ~ .pizza {
+.inpt-B5:checked ~ .pizza {
   -webkit-animation: pizzaflip 0.75s linear 1 forwards;
   animation: pizzaflip 0.75s linear 1 forwards;
 }
 
-input:checked ~ .pizza .toppings:nth-of-type(1) {
+.inpt-B5:checked ~ .pizza .toppings:nth-of-type(1) {
   -webkit-transition-delay: 0.775s;
   -o-transition-delay: 0.775s;
   transition-delay: 0.775s;
@@ -2511,7 +2475,7 @@ input:checked ~ .pizza .toppings:nth-of-type(1) {
   transform: scale(1) rotate(40deg);
 }
 
-input:checked ~ .pizza .toppings:nth-of-type(2) {
+.inpt-B5:checked ~ .pizza .toppings:nth-of-type(2) {
   -webkit-transition-delay: 0.8s;
   -o-transition-delay: 0.8s;
   transition-delay: 0.8s;
@@ -2520,7 +2484,7 @@ input:checked ~ .pizza .toppings:nth-of-type(2) {
   transform: scale(1) rotate(80deg);
 }
 
-input:checked ~ .pizza .toppings:nth-of-type(3) {
+.inpt-B5:checked ~ .pizza .toppings:nth-of-type(3) {
   -webkit-transition-delay: 0.825s;
   -o-transition-delay: 0.825s;
   transition-delay: 0.825s;
@@ -2529,7 +2493,7 @@ input:checked ~ .pizza .toppings:nth-of-type(3) {
   transform: scale(1) rotate(120deg);
 }
 
-input:checked ~ .pizza .toppings:nth-of-type(4) {
+.inpt-B5:checked ~ .pizza .toppings:nth-of-type(4) {
   -webkit-transition-delay: 0.85s;
   -o-transition-delay: 0.85s;
   transition-delay: 0.85s;
@@ -2538,7 +2502,7 @@ input:checked ~ .pizza .toppings:nth-of-type(4) {
   transform: scale(1) rotate(160deg);
 }
 
-input:checked ~ .pizza .toppings:nth-of-type(5) {
+.inpt-B5:checked ~ .pizza .toppings:nth-of-type(5) {
   -webkit-transition-delay: 0.875s;
   -o-transition-delay: 0.875s;
   transition-delay: 0.875s;
@@ -2547,7 +2511,7 @@ input:checked ~ .pizza .toppings:nth-of-type(5) {
   transform: scale(1) rotate(200deg);
 }
 
-input:checked ~ .pizza .inner {
+.inpt-B5:checked ~ .pizza .inner {
   -webkit-animation: spinwobble 0.75s linear 1 forwards;
   animation: spinwobble 0.75s linear 1 forwards;
 }
@@ -3293,16 +3257,16 @@ input:checked ~ .pizza .inner {
   transform: rotate(-45deg);
 }
 
-input:checked + .toggle:after {
+.inpt-E5:checked + .toggle:after {
   color: #ffffff;
 }
 
-input:checked + .toggle .toggle__handler-inpt-E5 {
+.inpt-E5:checked + .toggle .toggle__handler-inpt-E5 {
   -webkit-transform: translate3d(49px, 0, 0) rotate(0);
   transform: translate3d(49px, 0, 0) rotate(0);
 }
 
-input:checked + .toggle + .bear-body {
+.inpt-E5:checked + .toggle + .bear-body {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
@@ -3928,7 +3892,6 @@ Toggle Changes
 }
 
 /*-------- Input checkbox E-6 --------*/
-/* for the lazy */
 .inpt-E6[type="checkbox"] {
   display: none;
 }
@@ -4059,6 +4022,11 @@ Toggle Changes
   position: relative;
   display: inline-block;
   font-family: var(--body-font);
+  -webkit-box-shadow: 20px 10px 25px -10px rgba(0, 0, 0, 0.3);
+  box-shadow: 20px 10px 25px -10px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
   content: ":";
 }
 
@@ -4081,9 +4049,7 @@ Toggle Changes
   top: 0;
   height: 20px;
   width: 50px;
-  border-radius: 50vw;
-  -webkit-box-shadow: 33px 18px 26px -13px rgba(0, 0, 0, 0.17);
-  box-shadow: 33px 18px 26px -13px rgba(0, 0, 0, 0.17);
+  border-radius: 50px;
   -webkit-transition: -webkit-transform 0.3s ease-in;
   transition: -webkit-transform 0.3s ease-in;
   -o-transition: transform 0.3s ease-in;
@@ -4099,6 +4065,11 @@ Toggle Changes
   height: 100%;
   opacity: 0;
   z-index: 1;
+}
+
+.inpt-A7:checked + .label-inpt-A7 {
+  -webkit-box-shadow: -20px 10px 25px -10px rgba(0, 0, 0, 0.3);
+  box-shadow: -20px 10px 25px -10px rgba(0, 0, 0, 0.3);
 }
 
 .inpt-A7:checked + .label-inpt-A7:before {

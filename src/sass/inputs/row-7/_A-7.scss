@@ -28,6 +28,8 @@
   position: relative;
   display: inline-block;
   font-family: var(--body-font);
+  box-shadow: 20px 10px 25px -10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease-in;
 
   content: ":";
   &:before {
@@ -47,8 +49,7 @@
     top: 0;
     height: 20px;
     width: 50px;
-    border-radius: 50vw;
-    box-shadow: 33px 18px 26px -13px rgba(0, 0, 0, 0.17);
+    border-radius: 50px;
     transition: transform 0.3s ease-in;
   }
 }
@@ -63,6 +64,7 @@
   z-index: 1;
 
   &:checked + .label-inpt-A7 {
+    box-shadow: -20px 10px 25px -10px rgba(0, 0, 0, 0.3);
     &:before {
       transform: translateX(85px);
       color: #b7b7b7;

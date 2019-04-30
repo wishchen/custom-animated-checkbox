@@ -4085,6 +4085,114 @@ Toggle Changes
 }
 
 /*-------- Input checkbox B-7 --------*/
+.inpt-B7 {
+  margin: 30px;
+}
+
+.inpt-B7[type="checkbox"] {
+  position: relative;
+  width: 80px;
+  height: 40px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #cccccc;
+  outline: none;
+  border-radius: 20px;
+  -webkit-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.inpt-B7[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  -webkit-transition: var(--transition-05);
+  -o-transition: var(--transition-05);
+  transition: var(--transition-05);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  -webkit-animation: returnToggle 0.4s forwards;
+  animation: returnToggle 0.4s forwards;
+}
+
+.inpt-B7:checked[type="checkbox"] {
+  background-color: #02f266;
+}
+
+.inpt-B7:checked[type="checkbox"]::before {
+  -webkit-animation: toggle 0.4s forwards;
+  animation: toggle 0.4s forwards;
+}
+
+@-webkit-keyframes toggle {
+  0% {
+    left: 0;
+    width: 40px;
+  }
+  50% {
+    left: 0;
+    width: 80px;
+  }
+  100% {
+    left: 40px;
+    width: 40px;
+  }
+}
+
+@keyframes toggle {
+  0% {
+    left: 0;
+    width: 40px;
+  }
+  50% {
+    left: 0;
+    width: 80px;
+  }
+  100% {
+    left: 40px;
+    width: 40px;
+  }
+}
+
+@-webkit-keyframes returnToggle {
+  0% {
+    left: 40px;
+    width: 40px;
+  }
+  50% {
+    left: 0;
+    width: 80px;
+  }
+  100% {
+    left: 0;
+    width: 40px;
+  }
+}
+
+@keyframes returnToggle {
+  0% {
+    left: 40px;
+    width: 40px;
+  }
+  50% {
+    left: 0;
+    width: 80px;
+  }
+  100% {
+    left: 0;
+    width: 40px;
+  }
+}
+
 /*-------- Input checkbox C-7 --------*/
 /*-------- Input checkbox D-7 --------*/
 /*-------- Input checkbox E-7 --------*/

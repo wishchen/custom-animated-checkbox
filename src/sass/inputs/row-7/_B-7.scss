@@ -1,0 +1,65 @@
+.inpt-B7 {
+  margin: 30px;
+  &[type="checkbox"] {
+    position: relative;
+    width: 80px;
+    height: 40px;
+    appearance: none;
+    background-color: hsl(0, 0%, 80%);
+    outline: none;
+    border-radius: 20px;
+    transition-delay: 0.2s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border-radius: 40px;
+      top: 0;
+      left: 0;
+      background-color: #ffffff;
+      transition: var(--transition-05);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      animation: returnToggle 0.4s forwards;
+    }
+  }
+
+  &:checked[type="checkbox"] {
+    background-color: #02f266;
+
+    &::before {
+      animation: toggle 0.4s forwards;
+    }
+  }
+}
+
+@keyframes toggle {
+  0% {
+    left: 0;
+    width: 40px;
+  }
+  50% {
+    left: 0;
+    width: 80px;
+  }
+  100% {
+    left: 40px;
+    width: 40px;
+  }
+}
+
+@keyframes returnToggle {
+  0% {
+    left: 40px;
+    width: 40px;
+  }
+  50% {
+    left: 0;
+    width: 80px;
+  }
+  100% {
+    left: 0;
+    width: 40px;
+  }
+}
